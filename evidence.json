@@ -1,0 +1,561 @@
+{
+  "project": "GeoWAM",
+  "date": "2026-10-20",
+  "benchmark": {
+    "standard": {
+      "success": 1957,
+      "total": 2000,
+      "percent": 97.85,
+      "checkpoint_sha256": "f11c0a209c751e13ba282bfa04b3b07dbd1be26fe0ce15d04763f642df3af77e"
+    },
+    "plus": {
+      "success": 8119,
+      "total": 10030,
+      "percent": 80.95,
+      "without_language": 77.73
+    },
+    "provenance": "DINOv2-L action-only policy, step32000, fixed 40-task-ID conditioning. Geometry demonstrations use separate S12 checkpoints."
+  },
+  "forecast": "Action/state/text-conditioned S12 step5000, NFE1, eight genuine future frames at 0.2s increments. RGB is recorded reference; depth and flow are predictions. Flow is adjacent source-grid 3D displacement, not 2D optical flow.",
+  "gam": {
+    "tasks": {
+      "0": {
+        "cycles": [
+          {
+            "ours": 0.01428064052015543,
+            "gam": 0.0902566909790039,
+            "copy": 0.032173801213502884
+          },
+          {
+            "ours": 0.01909971609711647,
+            "gam": 0.08890097588300705,
+            "copy": 0.010756020434200764
+          },
+          {
+            "ours": 0.034682516008615494,
+            "gam": 0.08469033986330032,
+            "copy": 0.01978716254234314
+          },
+          {
+            "ours": 0.007354766130447388,
+            "gam": 0.11703372746706009,
+            "copy": 0.11176008731126785
+          }
+        ],
+        "ours": 0.018854409689083695,
+        "gam": 0.09522043354809284
+      },
+      "5": {
+        "cycles": [
+          {
+            "ours": 0.033479709178209305,
+            "gam": 0.09931501746177673,
+            "copy": 0.029957817867398262
+          },
+          {
+            "ours": 0.010942901484668255,
+            "gam": 0.1195095032453537,
+            "copy": 0.08762728422880173
+          },
+          {
+            "ours": 0.045594487339258194,
+            "gam": 0.17220094799995422,
+            "copy": 0.1364288330078125
+          },
+          {
+            "ours": 0.017942048609256744,
+            "gam": 0.15405547618865967,
+            "copy": 0.110530324280262
+          }
+        ],
+        "ours": 0.026989786652848125,
+        "gam": 0.13627023622393608
+      },
+      "7": {
+        "cycles": [
+          {
+            "ours": 0.006836023181676865,
+            "gam": 0.11214283853769302,
+            "copy": 0.019593246281147003
+          },
+          {
+            "ours": 0.0106510566547513,
+            "gam": 0.10128921270370483,
+            "copy": 0.039224278181791306
+          },
+          {
+            "ours": 0.010472805239260197,
+            "gam": 0.09244131296873093,
+            "copy": 0.02531610056757927
+          },
+          {
+            "ours": 0.01773925870656967,
+            "gam": 0.11398832499980927,
+            "copy": 0.05354396626353264
+          }
+        ],
+        "ours": 0.011424785945564508,
+        "gam": 0.10496542230248451
+      },
+      "8": {
+        "cycles": [
+          {
+            "ours": 0.012161568738520145,
+            "gam": 0.10240761935710907,
+            "copy": 0.025908734649419785
+          },
+          {
+            "ours": 0.012403846718370914,
+            "gam": 0.11646521836519241,
+            "copy": 0.08543229848146439
+          },
+          {
+            "ours": 0.016823450103402138,
+            "gam": 0.12296047061681747,
+            "copy": 0.08024723082780838
+          },
+          {
+            "ours": 0.009975414723157883,
+            "gam": 0.12468233704566956,
+            "copy": 0.05574877932667732
+          }
+        ],
+        "ours": 0.01284107007086277,
+        "gam": 0.11662891134619713
+      }
+    },
+    "protocol": "16 external-view endpoints; 4 tasks x 4 H8=.4s replans; frozen4RC realized-depth target; GAM affine-aligned diagnostic; GAM controls actions and S12 is a read-only sidecar, step18792 NFE4. Wrist results are mixed; no universal superiority claim."
+  },
+  "rollouts": [
+    {
+      "asset": "assets/rollout_0.gif",
+      "source_episode": "libero_10_task00_trial11_clean",
+      "success": true,
+      "task": "put both the alphabet soup and the tomato sauce in the basket",
+      "steps": 264,
+      "frame_count": 34,
+      "timing": "Actual saved H8 snapshots at 20Hz controller time; final frame held 1.6s. No interpolation."
+    },
+    {
+      "asset": "assets/rollout_1.gif",
+      "source_episode": "libero_10_task00_trial11_object005",
+      "success": true,
+      "task": "put both the alphabet soup and the tomato sauce in the basket",
+      "steps": 443,
+      "frame_count": 57,
+      "timing": "Actual saved H8 snapshots at 20Hz controller time; final frame held 1.6s. No interpolation."
+    },
+    {
+      "asset": "assets/rollout_2.gif",
+      "source_episode": "libero_10_task09_trial11_clean",
+      "success": true,
+      "task": "put the yellow and white mug in the microwave and close it",
+      "steps": 286,
+      "frame_count": 37,
+      "timing": "Actual saved H8 snapshots at 20Hz controller time; final frame held 1.6s. No interpolation."
+    },
+    {
+      "asset": "assets/rollout_3.gif",
+      "source_episode": "libero_10_task09_trial11_action035",
+      "success": true,
+      "task": "put the yellow and white mug in the microwave and close it",
+      "steps": 282,
+      "frame_count": 37,
+      "timing": "Actual saved H8 snapshots at 20Hz controller time; final frame held 1.6s. No interpolation."
+    }
+  ],
+  "assets": [
+    {
+      "asset": "assets/forecast/h01_depth.png",
+      "source_filename": "h01_depth.png",
+      "sha256": "ec6ea68278ffa92363696f9b39304c17f590ba04f165e0543c58c56b549b832f"
+    },
+    {
+      "asset": "assets/forecast/h01_motion_flow.png",
+      "source_filename": "h01_motion_flow.png",
+      "sha256": "210a4a1ada11940bcea2a0f6f88a2809043e8c2551d74417336c3517baff38a7"
+    },
+    {
+      "asset": "assets/forecast/h01_rgb.png",
+      "source_filename": "h01_rgb.png",
+      "sha256": "abe90b3f7953787a0d564bc0387e2a0bf190f91b3bc27f37f05751b41cb7be41"
+    },
+    {
+      "asset": "assets/forecast/h02_depth.png",
+      "source_filename": "h02_depth.png",
+      "sha256": "a9e40188eb67e6ed1c59c0e57ff355427ce59f16749cec8a42ed5e6df3e48d6d"
+    },
+    {
+      "asset": "assets/forecast/h02_motion_flow.png",
+      "source_filename": "h02_motion_flow.png",
+      "sha256": "47bff07bd9723a8666c9bcfbba530fb55ae10602beb3743d93152890593ca9c2"
+    },
+    {
+      "asset": "assets/forecast/h02_rgb.png",
+      "source_filename": "h02_rgb.png",
+      "sha256": "63879def566942dbd8cb6942a8b04328fb9dfeefdb382867428e0c5fbde0bd8b"
+    },
+    {
+      "asset": "assets/forecast/h03_depth.png",
+      "source_filename": "h03_depth.png",
+      "sha256": "0d23130abf8a1bc236d494022ce398ae7dc43c2df6ac3d7919e22e41cd7201ad"
+    },
+    {
+      "asset": "assets/forecast/h03_motion_flow.png",
+      "source_filename": "h03_motion_flow.png",
+      "sha256": "02fe29bcdd524d666553cf9999280ba875d5fdc3bcb3e0610a9fe8184bce9cd5"
+    },
+    {
+      "asset": "assets/forecast/h03_rgb.png",
+      "source_filename": "h03_rgb.png",
+      "sha256": "da514780fa986a8a3506ea5c3cd1577ffd26ec5eba429141b2e979579ef10d20"
+    },
+    {
+      "asset": "assets/forecast/h04_depth.png",
+      "source_filename": "h04_depth.png",
+      "sha256": "70a7860bfb14b69d47de999438a91ed4534c6f072508f4a96336047cacb3c48b"
+    },
+    {
+      "asset": "assets/forecast/h04_motion_flow.png",
+      "source_filename": "h04_motion_flow.png",
+      "sha256": "93cd2e4af7d849645a95aefbb6d716c4e5c0e9e61c5e5a4314d1af1d470703c8"
+    },
+    {
+      "asset": "assets/forecast/h04_rgb.png",
+      "source_filename": "h04_rgb.png",
+      "sha256": "8a1529bee362b5d830b9e764328f4221c39daa1cfb9bf036b0987138f1889d1e"
+    },
+    {
+      "asset": "assets/forecast/h05_depth.png",
+      "source_filename": "h05_depth.png",
+      "sha256": "e370b4b41502aed939b24e1320df43cf36e5dc84e4a5f3f44033e11b1dcc0ad1"
+    },
+    {
+      "asset": "assets/forecast/h05_motion_flow.png",
+      "source_filename": "h05_motion_flow.png",
+      "sha256": "96c5da590489bf2f54f4752f2bb72785e611b6e14d55abfc0e9f864b5b2a31c2"
+    },
+    {
+      "asset": "assets/forecast/h05_rgb.png",
+      "source_filename": "h05_rgb.png",
+      "sha256": "71ab69e8e140382092c43a08d48f331e41d292fb4bab03662d64b7b22e53bebb"
+    },
+    {
+      "asset": "assets/forecast/h06_depth.png",
+      "source_filename": "h06_depth.png",
+      "sha256": "dcb1aebee320233e7d3e275e393a395a8cb4e3527bd679b88ae840bee2f2a61e"
+    },
+    {
+      "asset": "assets/forecast/h06_motion_flow.png",
+      "source_filename": "h06_motion_flow.png",
+      "sha256": "fd462eddb6a26c3b7de39fd69ad59422e1052f33a7155276a77f0316409d74d3"
+    },
+    {
+      "asset": "assets/forecast/h06_rgb.png",
+      "source_filename": "h06_rgb.png",
+      "sha256": "e6516270d283a3d3ed3c36903a4fc4ba40932a19cb63fe0a85a9653d3455adc8"
+    },
+    {
+      "asset": "assets/forecast/h07_depth.png",
+      "source_filename": "h07_depth.png",
+      "sha256": "892ca979a79119370844d2cc7926a74e1c5a98e33d6f4d472dc18983de85dec7"
+    },
+    {
+      "asset": "assets/forecast/h07_motion_flow.png",
+      "source_filename": "h07_motion_flow.png",
+      "sha256": "d714099bd5f27f587a7725526066a8c5ac9b1b5b1cb552857cc2da4d0a5f5ebb"
+    },
+    {
+      "asset": "assets/forecast/h07_rgb.png",
+      "source_filename": "h07_rgb.png",
+      "sha256": "f02f6d32d384d62cef8615f101754e25bfdd8e07fc8bc8dcb39fce8c1288b5a2"
+    },
+    {
+      "asset": "assets/forecast/h08_depth.png",
+      "source_filename": "h08_depth.png",
+      "sha256": "3bde57d8a5f4ec449cd3f0bcbd14340c89f974472c1a7d59b52788aa537cc868"
+    },
+    {
+      "asset": "assets/forecast/h08_motion_flow.png",
+      "source_filename": "h08_motion_flow.png",
+      "sha256": "a01494eac9dd82f718206b72dcc06afe1fac5873b3d96b7e713b6a5b6d6a38cf"
+    },
+    {
+      "asset": "assets/forecast/h08_rgb.png",
+      "source_filename": "h08_rgb.png",
+      "sha256": "2153cb30b47e8d7212078c1ee17d10074b309e955cd496fd66446dcbed95ec15"
+    },
+    {
+      "asset": "assets/forecast/input_rgb.png",
+      "source_filename": "input_rgb.png",
+      "sha256": "9a7ce21ab4250a8a6f99f5c8711fb6ca3c5529e5fe25cf3c75dc197f12355eff"
+    },
+    {
+      "asset": "assets/forecast/input_rgb.png",
+      "source_filename": "input_rgb.png",
+      "sha256": "7484999f43743e298f4ee8088347f3ae4c8b06e95fc43518f75875890c4b3675"
+    },
+    {
+      "asset": "assets/depth_sequence.mp4",
+      "source_filename": "depth_sequence.mp4",
+      "sha256": "6b845036d64d4ae29fe1837a13ea862f85a32d6780fd4e2b117a78de814936da"
+    },
+    {
+      "asset": "assets/fastwam_depth.png",
+      "source_filename": "joint_endpoint_depth_example.png",
+      "sha256": "01c4300c65bcae74f3fcc5cc74c4be7f1f49fe25811456be0006de1290988f41"
+    },
+    {
+      "asset": "assets/trajectories.png",
+      "source_filename": "trajectory_3d_panel.png",
+      "sha256": "69544cb3d57bb47c08775280f338c85946b54f77d52ae7449c316cb8bf525d6c"
+    },
+    {
+      "asset": "assets/archived_benchmark.png",
+      "source_filename": "libero_comparison_compact.png",
+      "sha256": "8662c1f40da03f7284d9e913c10d71ddab6737e6e3403d1b41226424720cd284"
+    },
+    {
+      "asset": "assets/plus_success.mp4",
+      "source_filename": "libero_spatial_task1761_trial0_clean_metadata.mp4",
+      "sha256": "15f2f0cc6fb0dff21c0fb603de55543d363f590c984882296adbd3542d5180d3"
+    },
+    {
+      "asset": "assets/gam/task0/",
+      "source_filename": "depth_external.png",
+      "operation": "Exact axes-map crops from the corrected rawstate_v2 figure; original colors preserved.",
+      "map_bounds": {
+        "columns": [
+          [
+            133,
+            468
+          ],
+          [
+            626,
+            961
+          ],
+          [
+            1119,
+            1454
+          ],
+          [
+            1612,
+            1947
+          ]
+        ],
+        "rows": {
+          "rgb": [
+            503,
+            838
+          ],
+          "target": [
+            900,
+            1235
+          ],
+          "gam": [
+            2092,
+            2427
+          ],
+          "ours": [
+            2490,
+            2824
+          ]
+        }
+      }
+    },
+    {
+      "asset": "assets/gam/task5/",
+      "source_filename": "depth_external.png",
+      "operation": "Exact axes-map crops from the corrected rawstate_v2 figure; original colors preserved.",
+      "map_bounds": {
+        "columns": [
+          [
+            133,
+            468
+          ],
+          [
+            626,
+            961
+          ],
+          [
+            1119,
+            1454
+          ],
+          [
+            1612,
+            1947
+          ]
+        ],
+        "rows": {
+          "rgb": [
+            503,
+            838
+          ],
+          "target": [
+            900,
+            1235
+          ],
+          "gam": [
+            2092,
+            2427
+          ],
+          "ours": [
+            2490,
+            2824
+          ]
+        }
+      }
+    },
+    {
+      "asset": "assets/gam/task7/",
+      "source_filename": "depth_external.png",
+      "operation": "Exact axes-map crops from the corrected rawstate_v2 figure; original colors preserved.",
+      "map_bounds": {
+        "columns": [
+          [
+            133,
+            468
+          ],
+          [
+            626,
+            961
+          ],
+          [
+            1119,
+            1454
+          ],
+          [
+            1612,
+            1947
+          ]
+        ],
+        "rows": {
+          "rgb": [
+            503,
+            838
+          ],
+          "target": [
+            900,
+            1235
+          ],
+          "gam": [
+            2092,
+            2427
+          ],
+          "ours": [
+            2490,
+            2824
+          ]
+        }
+      }
+    },
+    {
+      "asset": "assets/gam/task8/",
+      "source_filename": "depth_external.png",
+      "operation": "Exact axes-map crops from the corrected rawstate_v2 figure; original colors preserved.",
+      "map_bounds": {
+        "columns": [
+          [
+            133,
+            468
+          ],
+          [
+            626,
+            961
+          ],
+          [
+            1119,
+            1454
+          ],
+          [
+            1612,
+            1947
+          ]
+        ],
+        "rows": {
+          "rgb": [
+            503,
+            838
+          ],
+          "target": [
+            900,
+            1235
+          ],
+          "gam": [
+            2092,
+            2427
+          ],
+          "ours": [
+            2490,
+            2824
+          ]
+        }
+      }
+    }
+  ],
+  "hero_update": {
+    "case": "case_01_libero_10_ep0292_t0175",
+    "rgb_depth_frames": "eight retained t0+4..32 controller-step frames",
+    "depth_exact_axes_crop": [
+      884,
+      154,
+      1160,
+      430
+    ],
+    "trajectory_sha256": "f6324c83faed69b7c00f86ab8e2e05f6bb7f238ca290cc03b74439c16952f0cd",
+    "display": "RGB predicted endpoint correspondence overlay. Source/endpoint only; no fabricated intermediate trajectories.",
+    "projection_validation_max_px": 1.4143103327395805e-05,
+    "displayed_query_count": 12,
+    "selection": "Predicted amplitude top 20%, then amplitude-weighted farthest-point sampling in source/endpoint/displacement space; 34px source separation; budget 12.",
+    "colors": {
+      "prediction": "pink",
+      "reference": "green"
+    }
+  },
+  "original_architecture": {
+    "source_filename": "PredictiveD4RT_MoT_Tasks (4).pptx",
+    "slide": 1,
+    "source_sha256": "2e95175d9d44ddacf3af0b0a9895c4cec8247b4ae6bd4e6d76750e2002516888",
+    "operation": "Native PowerPoint slide export, no diagram redrawing",
+    "representation_comparison_slide": 2
+  },
+  "complete_episode_showcase": {
+    "episodes": [
+      {
+        "id": "long-0",
+        "suite": "LIBERO Long",
+        "title": "Put both objects in the basket",
+        "instruction": "put both the alphabet soup and the tomato sauce in the basket",
+        "src": "assets/full_rollouts/long_0.webm",
+        "poster": "assets/full_rollouts/long_0.jpg",
+        "success": true,
+        "duration": 13.2,
+        "source": "libero_10_task00_trial11_clean",
+        "note": "Complete successful S12-policy episode · external + wrist views · retained observations every 0.4 s."
+      },
+      {
+        "id": "long-9",
+        "suite": "LIBERO Long",
+        "title": "Place the mug and close the microwave",
+        "instruction": "put the yellow and white mug in the microwave and close it",
+        "src": "assets/full_rollouts/long_9.webm",
+        "poster": "assets/full_rollouts/long_9.jpg",
+        "success": true,
+        "duration": 14.3,
+        "source": "libero_10_task09_trial11_clean",
+        "note": "Complete successful S12-policy episode · external + wrist views · retained observations every 0.4 s."
+      },
+      {
+        "id": "spatial-plus",
+        "suite": "LIBERO Spatial · Plus",
+        "title": "Pick the right bowl and place it on the plate",
+        "instruction": "Pick up the black bowl and place it on the plate.",
+        "src": "assets/plus_success.webm",
+        "poster": "assets/plus_success_poster.jpg",
+        "success": true,
+        "source": "v93_plus_video_prompt_audit_ep34_nfe4/clean_metadata/libero_spatial_task1761_trial0",
+        "note": "Complete retained successful Spatial-Plus rollout · V90 ep34 · original video timing."
+      }
+    ]
+  }
+}

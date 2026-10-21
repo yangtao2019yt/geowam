@@ -1,0 +1,5296 @@
+[
+  {
+    "id": "libero_spatial_task00_trial00",
+    "suite": "libero_spatial",
+    "title": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+    "bundle": "libero_spatial_task00_trial00.npz",
+    "success": true,
+    "complete_episode": true,
+    "start_step": 0,
+    "terminal_step": 75,
+    "checkpoint_sha256": "f0ef5b90f05f80b0a835cd92b2aafcb87a52664bece342ad2bbaf378ce8851b9",
+    "forecast_horizon_steps": 8,
+    "display_stride": 2,
+    "precision": "bfloat16 trunk / fp32 geometry heads",
+    "protocol": "Full-task geo cache: all predicted endpoints and observed H8 refresh references pass through the suffix together once. Heads decode separate H8 groups using refreshed reference/query features from that shared cache.",
+    "raw_episode_sha256": "64862bbdfbbff6e7bce6443291da41c87e615b245ae245df40b587791232a3e3",
+    "projection": "Fixed external query camera, using decoded anchor depth and query-relative 3D displacement; no future-camera motion.",
+    "selection": {
+      "0": [
+        40,
+        129,
+        153,
+        16,
+        122,
+        70,
+        14,
+        127
+      ],
+      "1": [
+        41,
+        157,
+        151,
+        72,
+        154,
+        66,
+        15,
+        96
+      ],
+      "2": [
+        67,
+        156,
+        14,
+        149,
+        153,
+        71,
+        12,
+        69
+      ],
+      "3": [
+        10,
+        210,
+        203,
+        6,
+        98,
+        123,
+        14,
+        120
+      ],
+      "4": [
+        37,
+        348,
+        257,
+        206,
+        116,
+        153,
+        5,
+        12
+      ],
+      "5": [
+        7,
+        397,
+        206,
+        172,
+        375,
+        286,
+        11,
+        90
+      ],
+      "6": [
+        63,
+        457,
+        234,
+        15,
+        174,
+        368,
+        66,
+        346
+      ],
+      "7": [
+        118,
+        424,
+        403,
+        234,
+        257,
+        42,
+        65,
+        344
+      ],
+      "8": [
+        368,
+        7,
+        204,
+        374,
+        116,
+        315,
+        229,
+        290
+      ],
+      "9": [
+        33,
+        423,
+        232,
+        403,
+        11,
+        171,
+        313,
+        146
+      ]
+    },
+    "decode_context_frames": 49,
+    "global_attention_frames": 49,
+    "query_refresh_steps": 8,
+    "query_resets": 9,
+    "reference_controller_steps": [
+      -8,
+      0,
+      8,
+      16,
+      24,
+      32,
+      40,
+      48,
+      56,
+      64
+    ],
+    "query_horizon_range_steps": [
+      8,
+      14
+    ],
+    "shared_geo_cache_sha256": "2be3fb6d409cdcd62cd36d50644824489bf33204d73b9bc8c6692fa0af615b40",
+    "geo_cache_sequence_order": [
+      {
+        "controller_step": -8,
+        "kind": "observed_reference",
+        "key": 0
+      },
+      {
+        "controller_step": 0,
+        "kind": "observed_reference",
+        "key": 1
+      },
+      {
+        "controller_step": 0,
+        "kind": "predicted_endpoint",
+        "key": 0
+      },
+      {
+        "controller_step": 2,
+        "kind": "predicted_endpoint",
+        "key": 2
+      },
+      {
+        "controller_step": 4,
+        "kind": "predicted_endpoint",
+        "key": 4
+      },
+      {
+        "controller_step": 6,
+        "kind": "predicted_endpoint",
+        "key": 6
+      },
+      {
+        "controller_step": 8,
+        "kind": "observed_reference",
+        "key": 2
+      },
+      {
+        "controller_step": 8,
+        "kind": "predicted_endpoint",
+        "key": 8
+      },
+      {
+        "controller_step": 10,
+        "kind": "predicted_endpoint",
+        "key": 10
+      },
+      {
+        "controller_step": 12,
+        "kind": "predicted_endpoint",
+        "key": 12
+      },
+      {
+        "controller_step": 14,
+        "kind": "predicted_endpoint",
+        "key": 14
+      },
+      {
+        "controller_step": 16,
+        "kind": "observed_reference",
+        "key": 3
+      },
+      {
+        "controller_step": 16,
+        "kind": "predicted_endpoint",
+        "key": 16
+      },
+      {
+        "controller_step": 18,
+        "kind": "predicted_endpoint",
+        "key": 18
+      },
+      {
+        "controller_step": 20,
+        "kind": "predicted_endpoint",
+        "key": 20
+      },
+      {
+        "controller_step": 22,
+        "kind": "predicted_endpoint",
+        "key": 22
+      },
+      {
+        "controller_step": 24,
+        "kind": "observed_reference",
+        "key": 4
+      },
+      {
+        "controller_step": 24,
+        "kind": "predicted_endpoint",
+        "key": 24
+      },
+      {
+        "controller_step": 26,
+        "kind": "predicted_endpoint",
+        "key": 26
+      },
+      {
+        "controller_step": 28,
+        "kind": "predicted_endpoint",
+        "key": 28
+      },
+      {
+        "controller_step": 30,
+        "kind": "predicted_endpoint",
+        "key": 30
+      },
+      {
+        "controller_step": 32,
+        "kind": "observed_reference",
+        "key": 5
+      },
+      {
+        "controller_step": 32,
+        "kind": "predicted_endpoint",
+        "key": 32
+      },
+      {
+        "controller_step": 34,
+        "kind": "predicted_endpoint",
+        "key": 34
+      },
+      {
+        "controller_step": 36,
+        "kind": "predicted_endpoint",
+        "key": 36
+      },
+      {
+        "controller_step": 38,
+        "kind": "predicted_endpoint",
+        "key": 38
+      },
+      {
+        "controller_step": 40,
+        "kind": "observed_reference",
+        "key": 6
+      },
+      {
+        "controller_step": 40,
+        "kind": "predicted_endpoint",
+        "key": 40
+      },
+      {
+        "controller_step": 42,
+        "kind": "predicted_endpoint",
+        "key": 42
+      },
+      {
+        "controller_step": 44,
+        "kind": "predicted_endpoint",
+        "key": 44
+      },
+      {
+        "controller_step": 46,
+        "kind": "predicted_endpoint",
+        "key": 46
+      },
+      {
+        "controller_step": 48,
+        "kind": "observed_reference",
+        "key": 7
+      },
+      {
+        "controller_step": 48,
+        "kind": "predicted_endpoint",
+        "key": 48
+      },
+      {
+        "controller_step": 50,
+        "kind": "predicted_endpoint",
+        "key": 50
+      },
+      {
+        "controller_step": 52,
+        "kind": "predicted_endpoint",
+        "key": 52
+      },
+      {
+        "controller_step": 54,
+        "kind": "predicted_endpoint",
+        "key": 54
+      },
+      {
+        "controller_step": 56,
+        "kind": "observed_reference",
+        "key": 8
+      },
+      {
+        "controller_step": 56,
+        "kind": "predicted_endpoint",
+        "key": 56
+      },
+      {
+        "controller_step": 58,
+        "kind": "predicted_endpoint",
+        "key": 58
+      },
+      {
+        "controller_step": 60,
+        "kind": "predicted_endpoint",
+        "key": 60
+      },
+      {
+        "controller_step": 62,
+        "kind": "predicted_endpoint",
+        "key": 62
+      },
+      {
+        "controller_step": 64,
+        "kind": "observed_reference",
+        "key": 9
+      },
+      {
+        "controller_step": 64,
+        "kind": "predicted_endpoint",
+        "key": 64
+      },
+      {
+        "controller_step": 66,
+        "kind": "predicted_endpoint",
+        "key": 66
+      },
+      {
+        "controller_step": 68,
+        "kind": "predicted_endpoint",
+        "key": 68
+      },
+      {
+        "controller_step": 70,
+        "kind": "predicted_endpoint",
+        "key": 70
+      },
+      {
+        "controller_step": 72,
+        "kind": "predicted_endpoint",
+        "key": 72
+      },
+      {
+        "controller_step": 74,
+        "kind": "predicted_endpoint",
+        "key": 74
+      },
+      {
+        "controller_step": 75,
+        "kind": "predicted_endpoint",
+        "key": 75
+      }
+    ],
+    "suffix_passes": 1,
+    "latent_sources": [
+      {
+        "target_step": 0,
+        "sha256": "67e8734e605fffa209e01ac6925b973f6e012f13795a1c3c0aea138b8fb85364"
+      },
+      {
+        "target_step": 2,
+        "sha256": "77ab2fa55919ce7778ffdf8ba3938b42c25f8d43b57c96a2c7a4abc2538c96d6"
+      },
+      {
+        "target_step": 4,
+        "sha256": "b1082b32e99db06a70b9107cf3aaf3686da39ae4071715d7186e87247ab1a8ae"
+      },
+      {
+        "target_step": 6,
+        "sha256": "12cf859c8681de1d6d3058fe3ce6db3acc08e94aa120241973e0ce7032820903"
+      },
+      {
+        "target_step": 8,
+        "sha256": "53980251a37736d383526d00db23437f56ef42c7ba1b842d2b1545e275be3cea"
+      },
+      {
+        "target_step": 10,
+        "sha256": "dcd9f978035e640a071e10f3313239c9e6bb8fc087ac7a53efedc707059a4088"
+      },
+      {
+        "target_step": 12,
+        "sha256": "bedb0e1ef737d0118657ceb87c44e0d12371379db4558922675293fb20aea6f0"
+      },
+      {
+        "target_step": 14,
+        "sha256": "3cc0f7492fba056ec32c7c735606dfec4e8e5107d363004d38d06a40c585add8"
+      },
+      {
+        "target_step": 16,
+        "sha256": "c563709698ac3ee2da01824b0081975f5d747b5f94cdffc9e940d21acfa327b3"
+      },
+      {
+        "target_step": 18,
+        "sha256": "4fcc6b35ac1ead03b98a79701a9d26dd7412a18945b11db935e4c12dd9975d51"
+      },
+      {
+        "target_step": 20,
+        "sha256": "f0c3f5caa40e6862c56a5e9a33da6afaef05382d90e5bfa4e6a33f57de09e083"
+      },
+      {
+        "target_step": 22,
+        "sha256": "0101b910567e023ccca30d57c81bd4e056c865284582ff99768134a421b6a4f4"
+      },
+      {
+        "target_step": 24,
+        "sha256": "b6a7d9b130fd964f3f9a8dd1497ba64bc8424b481bf9a7219293695f49a04634"
+      },
+      {
+        "target_step": 26,
+        "sha256": "0ca096683c5c38533da6a0c2894fb8c0ab4fc3654a521a711b820e7bbc435806"
+      },
+      {
+        "target_step": 28,
+        "sha256": "2cc3355cf818ab2d07dc28d093787ad9dc98fb1be1d29c0667dca227e14939d5"
+      },
+      {
+        "target_step": 30,
+        "sha256": "d17b908a4791cd632f35f0711df71ce8627dce63bbd8c712bb0723bafcb191ac"
+      },
+      {
+        "target_step": 32,
+        "sha256": "4e91ca041c32d5608bb47bc9e4c52f80707083bb6ff42103976b1f13f457c92e"
+      },
+      {
+        "target_step": 34,
+        "sha256": "4580178f375caa9bcefe813caee4a7bcf2c87b794a49fa48f6b8d66268769e81"
+      },
+      {
+        "target_step": 36,
+        "sha256": "274573cc69f39d9bbdf6aaa1e72e4d3e9f3bfc1b131d1913711be401118d39e7"
+      },
+      {
+        "target_step": 38,
+        "sha256": "10aaa4ae0ac6789f74f25afcf2b2b5f3f303e87d7271ebeabe24dad93af4df7d"
+      },
+      {
+        "target_step": 40,
+        "sha256": "debe244535717c2bd23af9ef6f5d2b7a74bbff296cbfc288959384b8a0e2fd9d"
+      },
+      {
+        "target_step": 42,
+        "sha256": "4f72732d474a6b0ab11b7e6cc4704980be41504dacd1f77fce5c489895228d44"
+      },
+      {
+        "target_step": 44,
+        "sha256": "e834c1688c6dd827c454cd125f141d5e9a474c19c7086a679220b3e8fa5aed15"
+      },
+      {
+        "target_step": 46,
+        "sha256": "ccb51fb50351a8c4bc5ce214f8593513619470f89bd9646dfbbed82e4de776dc"
+      },
+      {
+        "target_step": 48,
+        "sha256": "4823b0b8353fa2d0979f22a08465ff91274b9b09e53fa642ab3fc618b6caa65e"
+      },
+      {
+        "target_step": 50,
+        "sha256": "614d0b7255b211e29084d67791166876d936fdfd678738b56c7e9e611ff8ba86"
+      },
+      {
+        "target_step": 52,
+        "sha256": "810da72799001b8c985a728f7a0225e9dcbcb728186e72c5ff9247571512648d"
+      },
+      {
+        "target_step": 54,
+        "sha256": "0e5ec218fe32c2bbffaf1e9f8b35aa8b96c4b9f2d2c7ba80bb5679d773d6b5d0"
+      },
+      {
+        "target_step": 56,
+        "sha256": "83119d46a4ef913cfd086314207638db8a729b60aa775eeffc6d0149ae2e975d"
+      },
+      {
+        "target_step": 58,
+        "sha256": "04b28d0654ff6169194de06a33f078ea83ba1980c8c64404d7775e0fb26f3b2e"
+      },
+      {
+        "target_step": 60,
+        "sha256": "bc2e0f1a02a9c7ab058673fc8a16646d949d888af17a9ec1545050a093511272"
+      },
+      {
+        "target_step": 62,
+        "sha256": "586e84c44a930dc0a2c90f46a20c23a0b14a3b8a4bc4a352db8f2190fc11b868"
+      },
+      {
+        "target_step": 64,
+        "sha256": "9de46f7b138e65c8b1425868b1ea77036d3d4d307dc2e829e27d0ceef2d9277b"
+      },
+      {
+        "target_step": 66,
+        "sha256": "6bc7c6baf171171846615766360995d82b0e7d1b8354bcc27f6c863f59f9a46f"
+      },
+      {
+        "target_step": 68,
+        "sha256": "db9ee92fcb8afbf6bbe8cdbeea35e0b82a19ba12c5d78793fb687c5f216e8fc7"
+      },
+      {
+        "target_step": 70,
+        "sha256": "438b3b9e7d8333a67aa7a50ba06fb93474c3191a8488ac153b6157aeb31a5b9b"
+      },
+      {
+        "target_step": 72,
+        "sha256": "b0e50464d0e6ef9ff8737b8f63158af96db6d2c67c05e279abd6ef661dff935e"
+      },
+      {
+        "target_step": 74,
+        "sha256": "52804d660ddb65c203eabc7db6265fb92d569a337f9e31941f555b579ec3d775"
+      },
+      {
+        "target_step": 75,
+        "sha256": "2ab615ff384a057aea7c49565c9537e3df529be2fee41efda480cb07355164a8"
+      }
+    ],
+    "src": "libero_spatial_task00_trial00.webm",
+    "poster": "libero_spatial_task00_trial00.jpg",
+    "source_sha256": "f4f7eb70109e537986b959d2574a11e8a9757452095da6fdd0ad75c9c7cea1d8",
+    "depth_range": [
+      0.5189593285322189,
+      1.2992370569705962
+    ],
+    "display_forecast_lead_steps": 8,
+    "prediction_refresh_steps": 8,
+    "prediction_panels_hold_together": true,
+    "display_chunk_reference_steps": [
+      0,
+      0,
+      0,
+      0,
+      8,
+      8,
+      8,
+      8,
+      16,
+      16,
+      16,
+      16,
+      24,
+      24,
+      24,
+      24,
+      32,
+      32,
+      32,
+      32,
+      40,
+      40,
+      40,
+      40,
+      48,
+      48,
+      48,
+      48,
+      56,
+      56,
+      56,
+      56,
+      64,
+      64,
+      64,
+      64,
+      72,
+      72,
+      72
+    ],
+    "display_left_steps": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20,
+      22,
+      24,
+      26,
+      28,
+      30,
+      32,
+      34,
+      36,
+      38,
+      40,
+      42,
+      44,
+      46,
+      48,
+      50,
+      52,
+      54,
+      56,
+      58,
+      60,
+      62,
+      64,
+      66,
+      68,
+      70,
+      72,
+      74,
+      75
+    ],
+    "display_future_steps": [
+      8,
+      8,
+      8,
+      8,
+      16,
+      16,
+      16,
+      16,
+      24,
+      24,
+      24,
+      24,
+      32,
+      32,
+      32,
+      32,
+      40,
+      40,
+      40,
+      40,
+      48,
+      48,
+      48,
+      48,
+      56,
+      56,
+      56,
+      56,
+      64,
+      64,
+      64,
+      64,
+      72,
+      72,
+      72,
+      72,
+      75,
+      75,
+      75
+    ],
+    "motion_representation": "Sparse displacement vector field; arrows from observed query pixel to predicted future endpoint",
+    "motion_rgb_background": "Observed query/reference RGB, refreshed every H8",
+    "display_motion_reference_steps": [
+      0,
+      0,
+      0,
+      0,
+      8,
+      8,
+      8,
+      8,
+      16,
+      16,
+      16,
+      16,
+      24,
+      24,
+      24,
+      24,
+      32,
+      32,
+      32,
+      32,
+      40,
+      40,
+      40,
+      40,
+      48,
+      48,
+      48,
+      48,
+      56,
+      56,
+      56,
+      56,
+      64,
+      64,
+      64,
+      64,
+      64,
+      64,
+      64
+    ],
+    "arrow_scale": 1,
+    "temporal_trails": false,
+    "default_playback_rate": 0.75,
+    "terminal_prediction_hold": true,
+    "duration": 4.75
+  },
+  {
+    "id": "libero_goal_task00_trial00",
+    "suite": "libero_goal",
+    "title": "open the middle drawer of the cabinet",
+    "bundle": "libero_goal_task00_trial00.npz",
+    "success": true,
+    "complete_episode": true,
+    "start_step": 0,
+    "terminal_step": 127,
+    "checkpoint_sha256": "f0ef5b90f05f80b0a835cd92b2aafcb87a52664bece342ad2bbaf378ce8851b9",
+    "forecast_horizon_steps": 8,
+    "display_stride": 2,
+    "precision": "bfloat16 trunk / fp32 geometry heads",
+    "protocol": "Full-task geo cache: all predicted endpoints and observed H8 refresh references pass through the suffix together once. Heads decode separate H8 groups using refreshed reference/query features from that shared cache.",
+    "raw_episode_sha256": "1e28b2c7f74fe7117c4876ba76177b39f0a663a3e33fe20c9373f8aea62e09e2",
+    "projection": "Fixed external query camera, using decoded anchor depth and query-relative 3D displacement; no future-camera motion.",
+    "selection": {
+      "0": [
+        96,
+        156,
+        14,
+        72,
+        150,
+        65,
+        126,
+        40
+      ],
+      "1": [
+        41,
+        156,
+        150,
+        125,
+        72,
+        66,
+        11,
+        15
+      ],
+      "2": [
+        40,
+        156,
+        150,
+        71,
+        153,
+        14,
+        9,
+        94
+      ],
+      "3": [
+        41,
+        185,
+        178,
+        126,
+        9,
+        101,
+        15,
+        96
+      ],
+      "4": [
+        13,
+        241,
+        153,
+        128,
+        8,
+        43,
+        67,
+        237
+      ],
+      "5": [
+        11,
+        296,
+        179,
+        98,
+        94,
+        184,
+        14,
+        68
+      ],
+      "6": [
+        92,
+        324,
+        41,
+        208,
+        38,
+        123,
+        293,
+        177
+      ],
+      "7": [
+        147,
+        379,
+        68,
+        236,
+        63,
+        151,
+        233,
+        348
+      ],
+      "8": [
+        203,
+        434,
+        10,
+        292,
+        91,
+        152,
+        288,
+        375
+      ],
+      "9": [
+        202,
+        462,
+        12,
+        292,
+        92,
+        316,
+        180,
+        403
+      ],
+      "10": [
+        259,
+        463,
+        13,
+        294,
+        151,
+        403,
+        37,
+        263
+      ],
+      "11": [
+        261,
+        14,
+        493,
+        182,
+        350,
+        94,
+        265,
+        346
+      ],
+      "12": [
+        294,
+        14,
+        494,
+        151,
+        289,
+        354,
+        183,
+        434
+      ],
+      "13": [
+        266,
+        14,
+        494,
+        318,
+        406,
+        125,
+        207,
+        354
+      ],
+      "14": [
+        210,
+        494,
+        14,
+        347,
+        352,
+        262,
+        294,
+        95
+      ],
+      "15": [
+        210,
+        520,
+        316,
+        14,
+        377,
+        234,
+        381,
+        293
+      ]
+    },
+    "decode_context_frames": 81,
+    "global_attention_frames": 81,
+    "query_refresh_steps": 8,
+    "query_resets": 15,
+    "reference_controller_steps": [
+      -8,
+      0,
+      8,
+      16,
+      24,
+      32,
+      40,
+      48,
+      56,
+      64,
+      72,
+      80,
+      88,
+      96,
+      104,
+      112
+    ],
+    "query_horizon_range_steps": [
+      8,
+      15
+    ],
+    "shared_geo_cache_sha256": "a33fcfb1b40b26a727b8955a9032b4504296032d174c3d9cb311975821f7ba6d",
+    "geo_cache_sequence_order": [
+      {
+        "controller_step": -8,
+        "kind": "observed_reference",
+        "key": 0
+      },
+      {
+        "controller_step": 0,
+        "kind": "observed_reference",
+        "key": 1
+      },
+      {
+        "controller_step": 0,
+        "kind": "predicted_endpoint",
+        "key": 0
+      },
+      {
+        "controller_step": 2,
+        "kind": "predicted_endpoint",
+        "key": 2
+      },
+      {
+        "controller_step": 4,
+        "kind": "predicted_endpoint",
+        "key": 4
+      },
+      {
+        "controller_step": 6,
+        "kind": "predicted_endpoint",
+        "key": 6
+      },
+      {
+        "controller_step": 8,
+        "kind": "observed_reference",
+        "key": 2
+      },
+      {
+        "controller_step": 8,
+        "kind": "predicted_endpoint",
+        "key": 8
+      },
+      {
+        "controller_step": 10,
+        "kind": "predicted_endpoint",
+        "key": 10
+      },
+      {
+        "controller_step": 12,
+        "kind": "predicted_endpoint",
+        "key": 12
+      },
+      {
+        "controller_step": 14,
+        "kind": "predicted_endpoint",
+        "key": 14
+      },
+      {
+        "controller_step": 16,
+        "kind": "observed_reference",
+        "key": 3
+      },
+      {
+        "controller_step": 16,
+        "kind": "predicted_endpoint",
+        "key": 16
+      },
+      {
+        "controller_step": 18,
+        "kind": "predicted_endpoint",
+        "key": 18
+      },
+      {
+        "controller_step": 20,
+        "kind": "predicted_endpoint",
+        "key": 20
+      },
+      {
+        "controller_step": 22,
+        "kind": "predicted_endpoint",
+        "key": 22
+      },
+      {
+        "controller_step": 24,
+        "kind": "observed_reference",
+        "key": 4
+      },
+      {
+        "controller_step": 24,
+        "kind": "predicted_endpoint",
+        "key": 24
+      },
+      {
+        "controller_step": 26,
+        "kind": "predicted_endpoint",
+        "key": 26
+      },
+      {
+        "controller_step": 28,
+        "kind": "predicted_endpoint",
+        "key": 28
+      },
+      {
+        "controller_step": 30,
+        "kind": "predicted_endpoint",
+        "key": 30
+      },
+      {
+        "controller_step": 32,
+        "kind": "observed_reference",
+        "key": 5
+      },
+      {
+        "controller_step": 32,
+        "kind": "predicted_endpoint",
+        "key": 32
+      },
+      {
+        "controller_step": 34,
+        "kind": "predicted_endpoint",
+        "key": 34
+      },
+      {
+        "controller_step": 36,
+        "kind": "predicted_endpoint",
+        "key": 36
+      },
+      {
+        "controller_step": 38,
+        "kind": "predicted_endpoint",
+        "key": 38
+      },
+      {
+        "controller_step": 40,
+        "kind": "observed_reference",
+        "key": 6
+      },
+      {
+        "controller_step": 40,
+        "kind": "predicted_endpoint",
+        "key": 40
+      },
+      {
+        "controller_step": 42,
+        "kind": "predicted_endpoint",
+        "key": 42
+      },
+      {
+        "controller_step": 44,
+        "kind": "predicted_endpoint",
+        "key": 44
+      },
+      {
+        "controller_step": 46,
+        "kind": "predicted_endpoint",
+        "key": 46
+      },
+      {
+        "controller_step": 48,
+        "kind": "observed_reference",
+        "key": 7
+      },
+      {
+        "controller_step": 48,
+        "kind": "predicted_endpoint",
+        "key": 48
+      },
+      {
+        "controller_step": 50,
+        "kind": "predicted_endpoint",
+        "key": 50
+      },
+      {
+        "controller_step": 52,
+        "kind": "predicted_endpoint",
+        "key": 52
+      },
+      {
+        "controller_step": 54,
+        "kind": "predicted_endpoint",
+        "key": 54
+      },
+      {
+        "controller_step": 56,
+        "kind": "observed_reference",
+        "key": 8
+      },
+      {
+        "controller_step": 56,
+        "kind": "predicted_endpoint",
+        "key": 56
+      },
+      {
+        "controller_step": 58,
+        "kind": "predicted_endpoint",
+        "key": 58
+      },
+      {
+        "controller_step": 60,
+        "kind": "predicted_endpoint",
+        "key": 60
+      },
+      {
+        "controller_step": 62,
+        "kind": "predicted_endpoint",
+        "key": 62
+      },
+      {
+        "controller_step": 64,
+        "kind": "observed_reference",
+        "key": 9
+      },
+      {
+        "controller_step": 64,
+        "kind": "predicted_endpoint",
+        "key": 64
+      },
+      {
+        "controller_step": 66,
+        "kind": "predicted_endpoint",
+        "key": 66
+      },
+      {
+        "controller_step": 68,
+        "kind": "predicted_endpoint",
+        "key": 68
+      },
+      {
+        "controller_step": 70,
+        "kind": "predicted_endpoint",
+        "key": 70
+      },
+      {
+        "controller_step": 72,
+        "kind": "observed_reference",
+        "key": 10
+      },
+      {
+        "controller_step": 72,
+        "kind": "predicted_endpoint",
+        "key": 72
+      },
+      {
+        "controller_step": 74,
+        "kind": "predicted_endpoint",
+        "key": 74
+      },
+      {
+        "controller_step": 76,
+        "kind": "predicted_endpoint",
+        "key": 76
+      },
+      {
+        "controller_step": 78,
+        "kind": "predicted_endpoint",
+        "key": 78
+      },
+      {
+        "controller_step": 80,
+        "kind": "observed_reference",
+        "key": 11
+      },
+      {
+        "controller_step": 80,
+        "kind": "predicted_endpoint",
+        "key": 80
+      },
+      {
+        "controller_step": 82,
+        "kind": "predicted_endpoint",
+        "key": 82
+      },
+      {
+        "controller_step": 84,
+        "kind": "predicted_endpoint",
+        "key": 84
+      },
+      {
+        "controller_step": 86,
+        "kind": "predicted_endpoint",
+        "key": 86
+      },
+      {
+        "controller_step": 88,
+        "kind": "observed_reference",
+        "key": 12
+      },
+      {
+        "controller_step": 88,
+        "kind": "predicted_endpoint",
+        "key": 88
+      },
+      {
+        "controller_step": 90,
+        "kind": "predicted_endpoint",
+        "key": 90
+      },
+      {
+        "controller_step": 92,
+        "kind": "predicted_endpoint",
+        "key": 92
+      },
+      {
+        "controller_step": 94,
+        "kind": "predicted_endpoint",
+        "key": 94
+      },
+      {
+        "controller_step": 96,
+        "kind": "observed_reference",
+        "key": 13
+      },
+      {
+        "controller_step": 96,
+        "kind": "predicted_endpoint",
+        "key": 96
+      },
+      {
+        "controller_step": 98,
+        "kind": "predicted_endpoint",
+        "key": 98
+      },
+      {
+        "controller_step": 100,
+        "kind": "predicted_endpoint",
+        "key": 100
+      },
+      {
+        "controller_step": 102,
+        "kind": "predicted_endpoint",
+        "key": 102
+      },
+      {
+        "controller_step": 104,
+        "kind": "observed_reference",
+        "key": 14
+      },
+      {
+        "controller_step": 104,
+        "kind": "predicted_endpoint",
+        "key": 104
+      },
+      {
+        "controller_step": 106,
+        "kind": "predicted_endpoint",
+        "key": 106
+      },
+      {
+        "controller_step": 108,
+        "kind": "predicted_endpoint",
+        "key": 108
+      },
+      {
+        "controller_step": 110,
+        "kind": "predicted_endpoint",
+        "key": 110
+      },
+      {
+        "controller_step": 112,
+        "kind": "observed_reference",
+        "key": 15
+      },
+      {
+        "controller_step": 112,
+        "kind": "predicted_endpoint",
+        "key": 112
+      },
+      {
+        "controller_step": 114,
+        "kind": "predicted_endpoint",
+        "key": 114
+      },
+      {
+        "controller_step": 116,
+        "kind": "predicted_endpoint",
+        "key": 116
+      },
+      {
+        "controller_step": 118,
+        "kind": "predicted_endpoint",
+        "key": 118
+      },
+      {
+        "controller_step": 120,
+        "kind": "predicted_endpoint",
+        "key": 120
+      },
+      {
+        "controller_step": 122,
+        "kind": "predicted_endpoint",
+        "key": 122
+      },
+      {
+        "controller_step": 124,
+        "kind": "predicted_endpoint",
+        "key": 124
+      },
+      {
+        "controller_step": 126,
+        "kind": "predicted_endpoint",
+        "key": 126
+      },
+      {
+        "controller_step": 127,
+        "kind": "predicted_endpoint",
+        "key": 127
+      }
+    ],
+    "suffix_passes": 1,
+    "latent_sources": [
+      {
+        "target_step": 0,
+        "sha256": "03f214bb533bd88924ebe47b08bc61dcc455bd7f2dfc667d0b31d83b71ab0f46"
+      },
+      {
+        "target_step": 2,
+        "sha256": "5eb73fafc572e6772ffef128522175e40826a287a03e8f3ece1e2fdf251596ca"
+      },
+      {
+        "target_step": 4,
+        "sha256": "1e8eb6f2f930b4747b57a17aa474a53e9f30d779e3945b5420ac1a1b0a244156"
+      },
+      {
+        "target_step": 6,
+        "sha256": "1f533ea5266dcec85246c8f4769678c0e735eb4e4ba946a80e3e60d1a8b30b45"
+      },
+      {
+        "target_step": 8,
+        "sha256": "7d3a8831174d779f2943d1c9da0f1e3e4bff9a1402ea72a1173d39a5ffe8e7d6"
+      },
+      {
+        "target_step": 10,
+        "sha256": "d3df71f0af26ad5c43aee63ac3a909979147ca2f852543e236bd8fbe7dfe80b6"
+      },
+      {
+        "target_step": 12,
+        "sha256": "f19d56b61fd0577a6a0f484897f9fc24dd2e19cb1821992ccff8361b8bffe8d7"
+      },
+      {
+        "target_step": 14,
+        "sha256": "b58c047d32ca8e95a22e792e3ebccd8df48240a34f356e6a7eb419c9318e93ad"
+      },
+      {
+        "target_step": 16,
+        "sha256": "744c4a436ddb07a83575ad49cc6b72a9d4d0a4479ebded86b4965d704bbc9ea6"
+      },
+      {
+        "target_step": 18,
+        "sha256": "2c71f2e4e9d6790a0fb97b6fb7b697c357f298dfb1799b95dd4cb5519a7fcbe9"
+      },
+      {
+        "target_step": 20,
+        "sha256": "d347125ced6b117360763fd1e068d408306b83125a4648c6c8bff0f472a66117"
+      },
+      {
+        "target_step": 22,
+        "sha256": "f28c21cacf2b87f2431c202aa8c62201f977b433e8b7a0d041e0937cf8045fdb"
+      },
+      {
+        "target_step": 24,
+        "sha256": "c46fea026b7c16a04acd4082eb3ac06a877eed145d46e7c49acee3fd5e69336a"
+      },
+      {
+        "target_step": 26,
+        "sha256": "8c58e64daa5085dd3d8800547f4a45072b75b9597dc363f9ec0931f4e78cccf1"
+      },
+      {
+        "target_step": 28,
+        "sha256": "a055cd2b2864f1a9016c077d02f397e16a460b1a30d651bc911e590ca127441b"
+      },
+      {
+        "target_step": 30,
+        "sha256": "2362b06d42b6cc09f717ca59e98586a5d844d0e0afa2efd6cbdc93805068b61e"
+      },
+      {
+        "target_step": 32,
+        "sha256": "7c1c2df63a9f828e8b806d458cd362006e5c43cd8801a5748b246f3aa241378f"
+      },
+      {
+        "target_step": 34,
+        "sha256": "6d0354bbfec3daa4a31daabe695d6bb0c0f01d4de4ea747b79b33ab8989c7bb9"
+      },
+      {
+        "target_step": 36,
+        "sha256": "1623ecefa5d1a48925f9abc3fedf17e2aeafd3c69063f881ef046d967bf1b80f"
+      },
+      {
+        "target_step": 38,
+        "sha256": "7a6d098f9604ae8eaecda32e3924364ee4b8b6d0ba4659369db1a503e670bdfb"
+      },
+      {
+        "target_step": 40,
+        "sha256": "59a8380f7d82ded3454c48a76af5fc762818608785535bfe00303f21d7af016b"
+      },
+      {
+        "target_step": 42,
+        "sha256": "067147f12371b0acf26f7f59201ae22ae1b88f660a25ef1386eab27c0192f04b"
+      },
+      {
+        "target_step": 44,
+        "sha256": "efc7d465d83f05afb46508fc4f774cd0acb0b6a07f08f3658ce4e7d4f370a0e4"
+      },
+      {
+        "target_step": 46,
+        "sha256": "5d6fa56fc67d94a87452607b24525667e0318483bab09dcef6d10472e356628e"
+      },
+      {
+        "target_step": 48,
+        "sha256": "b49b8eb690a1cc9db418d14ec80c663ffcbca74b07f2d908c89fc1cf4b5e4ad0"
+      },
+      {
+        "target_step": 50,
+        "sha256": "1b68c7a99dee52c65c8dfacd805ca26dcf9beff36b0e408b7785d7371700df99"
+      },
+      {
+        "target_step": 52,
+        "sha256": "589d93a7a718339923eec391315358b2aa33d2d1318014f9394d19000bc4ba7c"
+      },
+      {
+        "target_step": 54,
+        "sha256": "493f3bace9bfe75463051aaa22fd84b665eca1bb52db876857908e2e8fd3efad"
+      },
+      {
+        "target_step": 56,
+        "sha256": "ce9fc7751830c52ba1ff5ce4c52164e8503d63f0925352e2b4514ee2e1756fe5"
+      },
+      {
+        "target_step": 58,
+        "sha256": "57e9658a6bf97ce94a66cb71b2e762533f092841b56e952a99a3f738e11f0f41"
+      },
+      {
+        "target_step": 60,
+        "sha256": "e629efcf303854e30fcc776f36433088dc2a01f814802f8e2255946746b3d19f"
+      },
+      {
+        "target_step": 62,
+        "sha256": "c54d5416512d4abd383b1cf3efcce4addd60c16c887ad85aa0943a0402f84b26"
+      },
+      {
+        "target_step": 64,
+        "sha256": "628d27d6b44eb071d67c655353198540f66c8a94769d1b0224feba47cf9ed690"
+      },
+      {
+        "target_step": 66,
+        "sha256": "375688881bc1d54a1c30502f49aeab9a0b448a71a81d7aa2c3410a4c7c1498ee"
+      },
+      {
+        "target_step": 68,
+        "sha256": "a1c816d61b0b84d5b7189333a5f853d7f1f9bed5ff08621765686b33c4a829d6"
+      },
+      {
+        "target_step": 70,
+        "sha256": "51c98adfeda8b7d6f6229c4063979f73ca62601c6de8e31fc9c193ed82f19cce"
+      },
+      {
+        "target_step": 72,
+        "sha256": "930642c27c39dfbb79285b46d08e1d83975a7fdf4d1b7d60c61465f910ec2f50"
+      },
+      {
+        "target_step": 74,
+        "sha256": "5de05a5050d2d8970706dafd29af807aa60aa8d9f1103523ea9ddc9c268210d1"
+      },
+      {
+        "target_step": 76,
+        "sha256": "a43ec8ffce140f15cc40895f73ce1386dc550588cc746e7bd9a58ab8d984b4da"
+      },
+      {
+        "target_step": 78,
+        "sha256": "61c2de0c8f609aab38a92bd5022ffb66811ce34ee2da92a0a5e77965be8cecd5"
+      },
+      {
+        "target_step": 80,
+        "sha256": "f613ee5fa20ed027daaf8e32f84a11cb618aa75682909841d1bb9a7d4028f2de"
+      },
+      {
+        "target_step": 82,
+        "sha256": "b63630b8c6212a19e844ef030cd7cfe229529bcb50d415cfe96c369f519d9436"
+      },
+      {
+        "target_step": 84,
+        "sha256": "3984536e0c54c8efae074021c2bde4c5aebdbc29d81b45570caff27fedafd9c1"
+      },
+      {
+        "target_step": 86,
+        "sha256": "af672b0f0be9cb8acc1e9481a689f187603c042fa3d575c4465f9a26194a583e"
+      },
+      {
+        "target_step": 88,
+        "sha256": "13e8e8025279a66ca878a4f7446061f6d4419c06d213a87905557769f802bbd9"
+      },
+      {
+        "target_step": 90,
+        "sha256": "0c6b2d58a1be9e1937fd10edeaac70f17785de9f496f5b015f0d8e66540b7528"
+      },
+      {
+        "target_step": 92,
+        "sha256": "1bfb6e46f8d1f523f3ab4eff7e7daea97fcf90cf3bdf3c756602613083954798"
+      },
+      {
+        "target_step": 94,
+        "sha256": "1ad637746947ab77bdfdc9f2d8dade7591d6d5b8881dc352f8cd36430e1f7f15"
+      },
+      {
+        "target_step": 96,
+        "sha256": "34e535f67bef13242172504b963b0621f71eb7b4205a5ba2c7248df026527ce0"
+      },
+      {
+        "target_step": 98,
+        "sha256": "290c0eeee229f50865a9ac56a1eb1b331d32e6f449fcf80978f7f78bf7ac1087"
+      },
+      {
+        "target_step": 100,
+        "sha256": "8f8d6521248b360903a19ff994f49740278fb4833bcc54b7b8cbddc70113531a"
+      },
+      {
+        "target_step": 102,
+        "sha256": "7ae79ea27d4da95fdbafdf20394b84cb8b91643eb9866b70303a8c93749ef4da"
+      },
+      {
+        "target_step": 104,
+        "sha256": "a68ab71cd2b75b2843a219b4409c78d5be2b8bded1365c71ea5d6cc592824b29"
+      },
+      {
+        "target_step": 106,
+        "sha256": "2781ed07cf1a90afc2aa437d1adbbc27d608c5913d3b04db26bdffad37c871a3"
+      },
+      {
+        "target_step": 108,
+        "sha256": "249f76340ea5189846610b9ea79a9cb02b69d84e8546ac87695d291ec67158e0"
+      },
+      {
+        "target_step": 110,
+        "sha256": "38c2352058b486a4246e11b6764694d53d5a59ca1d3921fd43fd5e05a117f489"
+      },
+      {
+        "target_step": 112,
+        "sha256": "daba3ab5edc38ee5d2fad46698691f2191e272b0bf8634fef94a03c2f3dcee8c"
+      },
+      {
+        "target_step": 114,
+        "sha256": "44fb570395b7c48926ac790b0c71b1ed14d06108f06c0f87cc0707be1fe2c5f5"
+      },
+      {
+        "target_step": 116,
+        "sha256": "91db98eaeb14fddc957f2424b90a3616a9854857ec019d0fe124446f0b4e6d0b"
+      },
+      {
+        "target_step": 118,
+        "sha256": "8c34782b509f98b80d4ed5f1c457e46d5f3d297545b07c9821a9d1b41edad787"
+      },
+      {
+        "target_step": 120,
+        "sha256": "7cefc4203ce4dbca2d712e0caecebed9baade0c35c4851d287bfe9d831161bbd"
+      },
+      {
+        "target_step": 122,
+        "sha256": "f40265b1957d7eaaae28d2f6d06159893fc70787a8d92455ccbe564e3bef76e3"
+      },
+      {
+        "target_step": 124,
+        "sha256": "02c7b8e25450e20f1935ba7cbe7d01d2f29a120e41c0e445f01ff4f6d9d94601"
+      },
+      {
+        "target_step": 126,
+        "sha256": "7757a5a097f777fb19dab727047ba9462335402df526cef54bdc351e20509752"
+      },
+      {
+        "target_step": 127,
+        "sha256": "e8849334c1da9430e6e7cf15d6a06415b3358cd75a4cb87dd777991345e00faf"
+      }
+    ],
+    "src": "libero_goal_task00_trial00.webm",
+    "poster": "libero_goal_task00_trial00.jpg",
+    "source_sha256": "99c18d453c88e6d263594397cc9ff61fc8d985e52f187d956883c5ea8850ab2d",
+    "depth_range": [
+      0.5778871774673462,
+      1.308216836452484
+    ],
+    "display_forecast_lead_steps": 8,
+    "prediction_refresh_steps": 8,
+    "prediction_panels_hold_together": true,
+    "display_chunk_reference_steps": [
+      0,
+      0,
+      0,
+      0,
+      8,
+      8,
+      8,
+      8,
+      16,
+      16,
+      16,
+      16,
+      24,
+      24,
+      24,
+      24,
+      32,
+      32,
+      32,
+      32,
+      40,
+      40,
+      40,
+      40,
+      48,
+      48,
+      48,
+      48,
+      56,
+      56,
+      56,
+      56,
+      64,
+      64,
+      64,
+      64,
+      72,
+      72,
+      72,
+      72,
+      80,
+      80,
+      80,
+      80,
+      88,
+      88,
+      88,
+      88,
+      96,
+      96,
+      96,
+      96,
+      104,
+      104,
+      104,
+      104,
+      112,
+      112,
+      112,
+      112,
+      120,
+      120,
+      120,
+      120,
+      120
+    ],
+    "display_left_steps": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20,
+      22,
+      24,
+      26,
+      28,
+      30,
+      32,
+      34,
+      36,
+      38,
+      40,
+      42,
+      44,
+      46,
+      48,
+      50,
+      52,
+      54,
+      56,
+      58,
+      60,
+      62,
+      64,
+      66,
+      68,
+      70,
+      72,
+      74,
+      76,
+      78,
+      80,
+      82,
+      84,
+      86,
+      88,
+      90,
+      92,
+      94,
+      96,
+      98,
+      100,
+      102,
+      104,
+      106,
+      108,
+      110,
+      112,
+      114,
+      116,
+      118,
+      120,
+      122,
+      124,
+      126,
+      127
+    ],
+    "display_future_steps": [
+      8,
+      8,
+      8,
+      8,
+      16,
+      16,
+      16,
+      16,
+      24,
+      24,
+      24,
+      24,
+      32,
+      32,
+      32,
+      32,
+      40,
+      40,
+      40,
+      40,
+      48,
+      48,
+      48,
+      48,
+      56,
+      56,
+      56,
+      56,
+      64,
+      64,
+      64,
+      64,
+      72,
+      72,
+      72,
+      72,
+      80,
+      80,
+      80,
+      80,
+      88,
+      88,
+      88,
+      88,
+      96,
+      96,
+      96,
+      96,
+      104,
+      104,
+      104,
+      104,
+      112,
+      112,
+      112,
+      112,
+      120,
+      120,
+      120,
+      120,
+      127,
+      127,
+      127,
+      127,
+      127
+    ],
+    "motion_representation": "Sparse displacement vector field; arrows from observed query pixel to predicted future endpoint",
+    "motion_rgb_background": "Observed query/reference RGB, refreshed every H8",
+    "display_motion_reference_steps": [
+      0,
+      0,
+      0,
+      0,
+      8,
+      8,
+      8,
+      8,
+      16,
+      16,
+      16,
+      16,
+      24,
+      24,
+      24,
+      24,
+      32,
+      32,
+      32,
+      32,
+      40,
+      40,
+      40,
+      40,
+      48,
+      48,
+      48,
+      48,
+      56,
+      56,
+      56,
+      56,
+      64,
+      64,
+      64,
+      64,
+      72,
+      72,
+      72,
+      72,
+      80,
+      80,
+      80,
+      80,
+      88,
+      88,
+      88,
+      88,
+      96,
+      96,
+      96,
+      96,
+      104,
+      104,
+      104,
+      104,
+      112,
+      112,
+      112,
+      112,
+      112,
+      112,
+      112,
+      112,
+      112
+    ],
+    "arrow_scale": 1,
+    "temporal_trails": false,
+    "default_playback_rate": 0.75,
+    "terminal_prediction_hold": true,
+    "duration": 7.35
+  },
+  {
+    "id": "libero_object_task00_trial00",
+    "suite": "libero_object",
+    "title": "pick up the alphabet soup and place it in the basket",
+    "bundle": "libero_object_task00_trial00.npz",
+    "success": true,
+    "complete_episode": true,
+    "start_step": 0,
+    "terminal_step": 132,
+    "checkpoint_sha256": "f0ef5b90f05f80b0a835cd92b2aafcb87a52664bece342ad2bbaf378ce8851b9",
+    "forecast_horizon_steps": 8,
+    "display_stride": 2,
+    "precision": "bfloat16 trunk / fp32 geometry heads",
+    "protocol": "Full-task geo cache: all predicted endpoints and observed H8 refresh references pass through the suffix together once. Heads decode separate H8 groups using refreshed reference/query features from that shared cache.",
+    "raw_episode_sha256": "64477cc55d9f8bb8ca7c65f499f0167c8fbe3388866fdeedfe0fc73d15a77808",
+    "projection": "Fixed external query camera, using decoded anchor depth and query-relative 3D displacement; no future-camera motion.",
+    "selection": {
+      "0": [
+        151,
+        15,
+        156,
+        10,
+        97,
+        40,
+        153,
+        95
+      ],
+      "1": [
+        97,
+        10,
+        156,
+        15,
+        151,
+        40,
+        182,
+        100
+      ],
+      "2": [
+        16,
+        181,
+        11,
+        186,
+        99,
+        102,
+        41,
+        156
+      ],
+      "3": [
+        43,
+        189,
+        20,
+        184,
+        102,
+        17,
+        159,
+        76
+      ],
+      "4": [
+        17,
+        219,
+        23,
+        186,
+        105,
+        20,
+        74,
+        189
+      ],
+      "5": [
+        49,
+        275,
+        214,
+        16,
+        162,
+        102,
+        272,
+        79
+      ],
+      "6": [
+        163,
+        16,
+        327,
+        185,
+        303,
+        132,
+        244,
+        101
+      ],
+      "7": [
+        72,
+        359,
+        162,
+        241,
+        273,
+        158,
+        326,
+        384
+      ],
+      "8": [
+        158,
+        331,
+        135,
+        298,
+        217,
+        384,
+        100,
+        213
+      ],
+      "9": [
+        101,
+        329,
+        107,
+        215,
+        219,
+        132,
+        189,
+        272
+      ],
+      "10": [
+        76,
+        270,
+        43,
+        190,
+        157,
+        160,
+        73,
+        244
+      ],
+      "11": [
+        41,
+        241,
+        103,
+        154,
+        17,
+        100,
+        187,
+        157
+      ],
+      "12": [
+        69,
+        238,
+        129,
+        179,
+        10,
+        15,
+        154,
+        99
+      ],
+      "13": [
+        95,
+        263,
+        176,
+        182,
+        13,
+        8,
+        179,
+        125
+      ],
+      "14": [
+        5,
+        261,
+        11,
+        120,
+        179,
+        173,
+        36,
+        94
+      ],
+      "15": [
+        5,
+        285,
+        148,
+        142,
+        37,
+        89,
+        173,
+        227
+      ],
+      "16": [
+        118,
+        256,
+        31,
+        115,
+        202,
+        61,
+        172
+      ]
+    },
+    "decode_context_frames": 84,
+    "global_attention_frames": 84,
+    "query_refresh_steps": 8,
+    "query_resets": 16,
+    "reference_controller_steps": [
+      -8,
+      0,
+      8,
+      16,
+      24,
+      32,
+      40,
+      48,
+      56,
+      64,
+      72,
+      80,
+      88,
+      96,
+      104,
+      112,
+      120
+    ],
+    "query_horizon_range_steps": [
+      8,
+      14
+    ],
+    "shared_geo_cache_sha256": "d3672ac44fffe5d0001c527c174c99341eecaf37110d8dfe42baafb98cadc6a5",
+    "geo_cache_sequence_order": [
+      {
+        "controller_step": -8,
+        "kind": "observed_reference",
+        "key": 0
+      },
+      {
+        "controller_step": 0,
+        "kind": "observed_reference",
+        "key": 1
+      },
+      {
+        "controller_step": 0,
+        "kind": "predicted_endpoint",
+        "key": 0
+      },
+      {
+        "controller_step": 2,
+        "kind": "predicted_endpoint",
+        "key": 2
+      },
+      {
+        "controller_step": 4,
+        "kind": "predicted_endpoint",
+        "key": 4
+      },
+      {
+        "controller_step": 6,
+        "kind": "predicted_endpoint",
+        "key": 6
+      },
+      {
+        "controller_step": 8,
+        "kind": "observed_reference",
+        "key": 2
+      },
+      {
+        "controller_step": 8,
+        "kind": "predicted_endpoint",
+        "key": 8
+      },
+      {
+        "controller_step": 10,
+        "kind": "predicted_endpoint",
+        "key": 10
+      },
+      {
+        "controller_step": 12,
+        "kind": "predicted_endpoint",
+        "key": 12
+      },
+      {
+        "controller_step": 14,
+        "kind": "predicted_endpoint",
+        "key": 14
+      },
+      {
+        "controller_step": 16,
+        "kind": "observed_reference",
+        "key": 3
+      },
+      {
+        "controller_step": 16,
+        "kind": "predicted_endpoint",
+        "key": 16
+      },
+      {
+        "controller_step": 18,
+        "kind": "predicted_endpoint",
+        "key": 18
+      },
+      {
+        "controller_step": 20,
+        "kind": "predicted_endpoint",
+        "key": 20
+      },
+      {
+        "controller_step": 22,
+        "kind": "predicted_endpoint",
+        "key": 22
+      },
+      {
+        "controller_step": 24,
+        "kind": "observed_reference",
+        "key": 4
+      },
+      {
+        "controller_step": 24,
+        "kind": "predicted_endpoint",
+        "key": 24
+      },
+      {
+        "controller_step": 26,
+        "kind": "predicted_endpoint",
+        "key": 26
+      },
+      {
+        "controller_step": 28,
+        "kind": "predicted_endpoint",
+        "key": 28
+      },
+      {
+        "controller_step": 30,
+        "kind": "predicted_endpoint",
+        "key": 30
+      },
+      {
+        "controller_step": 32,
+        "kind": "observed_reference",
+        "key": 5
+      },
+      {
+        "controller_step": 32,
+        "kind": "predicted_endpoint",
+        "key": 32
+      },
+      {
+        "controller_step": 34,
+        "kind": "predicted_endpoint",
+        "key": 34
+      },
+      {
+        "controller_step": 36,
+        "kind": "predicted_endpoint",
+        "key": 36
+      },
+      {
+        "controller_step": 38,
+        "kind": "predicted_endpoint",
+        "key": 38
+      },
+      {
+        "controller_step": 40,
+        "kind": "observed_reference",
+        "key": 6
+      },
+      {
+        "controller_step": 40,
+        "kind": "predicted_endpoint",
+        "key": 40
+      },
+      {
+        "controller_step": 42,
+        "kind": "predicted_endpoint",
+        "key": 42
+      },
+      {
+        "controller_step": 44,
+        "kind": "predicted_endpoint",
+        "key": 44
+      },
+      {
+        "controller_step": 46,
+        "kind": "predicted_endpoint",
+        "key": 46
+      },
+      {
+        "controller_step": 48,
+        "kind": "observed_reference",
+        "key": 7
+      },
+      {
+        "controller_step": 48,
+        "kind": "predicted_endpoint",
+        "key": 48
+      },
+      {
+        "controller_step": 50,
+        "kind": "predicted_endpoint",
+        "key": 50
+      },
+      {
+        "controller_step": 52,
+        "kind": "predicted_endpoint",
+        "key": 52
+      },
+      {
+        "controller_step": 54,
+        "kind": "predicted_endpoint",
+        "key": 54
+      },
+      {
+        "controller_step": 56,
+        "kind": "observed_reference",
+        "key": 8
+      },
+      {
+        "controller_step": 56,
+        "kind": "predicted_endpoint",
+        "key": 56
+      },
+      {
+        "controller_step": 58,
+        "kind": "predicted_endpoint",
+        "key": 58
+      },
+      {
+        "controller_step": 60,
+        "kind": "predicted_endpoint",
+        "key": 60
+      },
+      {
+        "controller_step": 62,
+        "kind": "predicted_endpoint",
+        "key": 62
+      },
+      {
+        "controller_step": 64,
+        "kind": "observed_reference",
+        "key": 9
+      },
+      {
+        "controller_step": 64,
+        "kind": "predicted_endpoint",
+        "key": 64
+      },
+      {
+        "controller_step": 66,
+        "kind": "predicted_endpoint",
+        "key": 66
+      },
+      {
+        "controller_step": 68,
+        "kind": "predicted_endpoint",
+        "key": 68
+      },
+      {
+        "controller_step": 70,
+        "kind": "predicted_endpoint",
+        "key": 70
+      },
+      {
+        "controller_step": 72,
+        "kind": "observed_reference",
+        "key": 10
+      },
+      {
+        "controller_step": 72,
+        "kind": "predicted_endpoint",
+        "key": 72
+      },
+      {
+        "controller_step": 74,
+        "kind": "predicted_endpoint",
+        "key": 74
+      },
+      {
+        "controller_step": 76,
+        "kind": "predicted_endpoint",
+        "key": 76
+      },
+      {
+        "controller_step": 78,
+        "kind": "predicted_endpoint",
+        "key": 78
+      },
+      {
+        "controller_step": 80,
+        "kind": "observed_reference",
+        "key": 11
+      },
+      {
+        "controller_step": 80,
+        "kind": "predicted_endpoint",
+        "key": 80
+      },
+      {
+        "controller_step": 82,
+        "kind": "predicted_endpoint",
+        "key": 82
+      },
+      {
+        "controller_step": 84,
+        "kind": "predicted_endpoint",
+        "key": 84
+      },
+      {
+        "controller_step": 86,
+        "kind": "predicted_endpoint",
+        "key": 86
+      },
+      {
+        "controller_step": 88,
+        "kind": "observed_reference",
+        "key": 12
+      },
+      {
+        "controller_step": 88,
+        "kind": "predicted_endpoint",
+        "key": 88
+      },
+      {
+        "controller_step": 90,
+        "kind": "predicted_endpoint",
+        "key": 90
+      },
+      {
+        "controller_step": 92,
+        "kind": "predicted_endpoint",
+        "key": 92
+      },
+      {
+        "controller_step": 94,
+        "kind": "predicted_endpoint",
+        "key": 94
+      },
+      {
+        "controller_step": 96,
+        "kind": "observed_reference",
+        "key": 13
+      },
+      {
+        "controller_step": 96,
+        "kind": "predicted_endpoint",
+        "key": 96
+      },
+      {
+        "controller_step": 98,
+        "kind": "predicted_endpoint",
+        "key": 98
+      },
+      {
+        "controller_step": 100,
+        "kind": "predicted_endpoint",
+        "key": 100
+      },
+      {
+        "controller_step": 102,
+        "kind": "predicted_endpoint",
+        "key": 102
+      },
+      {
+        "controller_step": 104,
+        "kind": "observed_reference",
+        "key": 14
+      },
+      {
+        "controller_step": 104,
+        "kind": "predicted_endpoint",
+        "key": 104
+      },
+      {
+        "controller_step": 106,
+        "kind": "predicted_endpoint",
+        "key": 106
+      },
+      {
+        "controller_step": 108,
+        "kind": "predicted_endpoint",
+        "key": 108
+      },
+      {
+        "controller_step": 110,
+        "kind": "predicted_endpoint",
+        "key": 110
+      },
+      {
+        "controller_step": 112,
+        "kind": "observed_reference",
+        "key": 15
+      },
+      {
+        "controller_step": 112,
+        "kind": "predicted_endpoint",
+        "key": 112
+      },
+      {
+        "controller_step": 114,
+        "kind": "predicted_endpoint",
+        "key": 114
+      },
+      {
+        "controller_step": 116,
+        "kind": "predicted_endpoint",
+        "key": 116
+      },
+      {
+        "controller_step": 118,
+        "kind": "predicted_endpoint",
+        "key": 118
+      },
+      {
+        "controller_step": 120,
+        "kind": "observed_reference",
+        "key": 16
+      },
+      {
+        "controller_step": 120,
+        "kind": "predicted_endpoint",
+        "key": 120
+      },
+      {
+        "controller_step": 122,
+        "kind": "predicted_endpoint",
+        "key": 122
+      },
+      {
+        "controller_step": 124,
+        "kind": "predicted_endpoint",
+        "key": 124
+      },
+      {
+        "controller_step": 126,
+        "kind": "predicted_endpoint",
+        "key": 126
+      },
+      {
+        "controller_step": 128,
+        "kind": "predicted_endpoint",
+        "key": 128
+      },
+      {
+        "controller_step": 130,
+        "kind": "predicted_endpoint",
+        "key": 130
+      },
+      {
+        "controller_step": 132,
+        "kind": "predicted_endpoint",
+        "key": 132
+      }
+    ],
+    "suffix_passes": 1,
+    "latent_sources": [
+      {
+        "target_step": 0,
+        "sha256": "5210229943dd17732cd28ad042d536528ef91fe2a219592be8154274c2f4ede3"
+      },
+      {
+        "target_step": 2,
+        "sha256": "4ec300451b47084b067ba04ab81e759feb853402fdb7106a72cc3f91c51e7a62"
+      },
+      {
+        "target_step": 4,
+        "sha256": "c0b28463f59016f5976600d02057118e53915de0ab278acbac14556bcc31da06"
+      },
+      {
+        "target_step": 6,
+        "sha256": "dc55e5cab25d220d3761be34a908e9bd86880dd48809068cab442035a3793e76"
+      },
+      {
+        "target_step": 8,
+        "sha256": "4a31dbac8c27fdfb26bde9373fc52305f826992a0790e029ebc8f55042385700"
+      },
+      {
+        "target_step": 10,
+        "sha256": "ef346825b68a0a329c22512304e09bdfd847ec6f52efd319c89e21683d045042"
+      },
+      {
+        "target_step": 12,
+        "sha256": "b395bc08df450f61f31a8c7a2597212523a65e9ccc7454a1aeb132361d75182e"
+      },
+      {
+        "target_step": 14,
+        "sha256": "70c888a1788f99963b608507fe2a59c39848ab29a229730afc6eee14247a358b"
+      },
+      {
+        "target_step": 16,
+        "sha256": "0879d9587c9869994f43b004fddf67cdd59d1d1899a3c3603ef40618c064340f"
+      },
+      {
+        "target_step": 18,
+        "sha256": "b799d1b07751a6310d6346ec11466a830245cd096c5aba19c87073491a69f619"
+      },
+      {
+        "target_step": 20,
+        "sha256": "84037f47a6c4962b9f42a38f1e00a26f1b558da83e7b45ad91921c29ed187ade"
+      },
+      {
+        "target_step": 22,
+        "sha256": "ea5a1c5f9bef1fb9242354f08bfd9a50aee03aeebb2bc6bba6390f1b2e780e8f"
+      },
+      {
+        "target_step": 24,
+        "sha256": "fbc5f370ce115a531236f53e944cb8ab48b672fa68cdd795cdecb91b98619026"
+      },
+      {
+        "target_step": 26,
+        "sha256": "80fc5e2183e2031a83a707cbe9fb18f708237eaf5e1cf570fcab5c312bff5691"
+      },
+      {
+        "target_step": 28,
+        "sha256": "4d300211a73add9c5be22990947a2257c5f804f6e99b37df832792a973eef2c2"
+      },
+      {
+        "target_step": 30,
+        "sha256": "5a219b1a18f8eb1799c9d1b397667daeb2f9675423a925cd78fb6f1532ba14be"
+      },
+      {
+        "target_step": 32,
+        "sha256": "90d0d4f6b1776edd9f4d5b5da3fdf191bdbe0b155e6e1e7cdbfdd914ec1ef329"
+      },
+      {
+        "target_step": 34,
+        "sha256": "8122dcbee22145483cbff80216b5a6d2d4e79389c372ebb43ee3a833b0451649"
+      },
+      {
+        "target_step": 36,
+        "sha256": "b0740be71d2e69af559da58dc286238e03655694b22797980f3878b5374ac2d3"
+      },
+      {
+        "target_step": 38,
+        "sha256": "be4207e27e505ceac6ba31a89cc8af263511095291a341f0c89ca7153454fa05"
+      },
+      {
+        "target_step": 40,
+        "sha256": "93eb0b5b5be2e757a7b75006b6a22f77506bd29cf5cce2952c034c9dab98f45b"
+      },
+      {
+        "target_step": 42,
+        "sha256": "0105a1c09a3b41e93d471d8ddaa582f13788b9d4ce5fe3ad394be41a99fedd71"
+      },
+      {
+        "target_step": 44,
+        "sha256": "96e9d39c511b3718c1e0436fa9daad90c0c083700e13e7960b4777c32915f3d4"
+      },
+      {
+        "target_step": 46,
+        "sha256": "8c443ed329a9023dd28e8373e354cfc8f95f5c421c7657350fa058068f1af3fc"
+      },
+      {
+        "target_step": 48,
+        "sha256": "707901921ead110107f14c0d383e7d10ee3e80aedcc2b96d53212470d9c59062"
+      },
+      {
+        "target_step": 50,
+        "sha256": "52c776742aa1d5ca988b2362e586a8e0cd70ba9eba4631911c7c18a8f4b5eca0"
+      },
+      {
+        "target_step": 52,
+        "sha256": "e76e010a832b0bcc2bc57334c643c94a69d4d54de12dcff24214f99ab042a3e3"
+      },
+      {
+        "target_step": 54,
+        "sha256": "22ac637b4cab50ac874170b28cca72cb89df06a31871e40926a83157fb323b35"
+      },
+      {
+        "target_step": 56,
+        "sha256": "e9a41c923101a7ad80fe7023a88a7ef1bb99b0a66b4e1bff0f18d15e362f1fd3"
+      },
+      {
+        "target_step": 58,
+        "sha256": "5d1c78da69ebfb623b96d64b86a481be27151fbe14ad3ad79c50ffbc7f77a1f4"
+      },
+      {
+        "target_step": 60,
+        "sha256": "b03820988816a2179f0b286b7550007a66a78f6480625fab6ceefbe90fe85aac"
+      },
+      {
+        "target_step": 62,
+        "sha256": "7bcde00e999ffc3ff744e209aad367cc71418201656960538924f726fe15f9cf"
+      },
+      {
+        "target_step": 64,
+        "sha256": "de09a041659f51b3e060ed853a87ee11fb765de643716baacb5ec5d051415026"
+      },
+      {
+        "target_step": 66,
+        "sha256": "504a67df70d27084f530e341e72e2c1a76cbf4c9f01301c06bca2869d180f737"
+      },
+      {
+        "target_step": 68,
+        "sha256": "05c48cb45250f8e25c049b17ae67705d749baf96bd68aef81458989bb32fff83"
+      },
+      {
+        "target_step": 70,
+        "sha256": "5d39c3fa406fba385300993c40c0f594fbb74b48f07cbb8a45d4eb63435055eb"
+      },
+      {
+        "target_step": 72,
+        "sha256": "850697aa998848d175d87ba57a30857f61167156a9ce8ea5584d85f3999b276e"
+      },
+      {
+        "target_step": 74,
+        "sha256": "d5dd44aefb26a3f98b7497ba92ca69b6a83c07e18d53aa328d9c91aee037eb8f"
+      },
+      {
+        "target_step": 76,
+        "sha256": "11aa136d82142c7438372dee0417ff9658fb8093a87cdc2c0846ff0b7ee1668e"
+      },
+      {
+        "target_step": 78,
+        "sha256": "0f5c572c061653def804837243c32dc0d96ff74b5a9da8f665391b5e8b984b48"
+      },
+      {
+        "target_step": 80,
+        "sha256": "cf254b28fe4862aa75a445e9c1108c4ac628892b60e77af357aae0c3883df8dd"
+      },
+      {
+        "target_step": 82,
+        "sha256": "1d97f0dca312257a868904e7ae318dfd774e92c4b1bfe4919ca93e1043303462"
+      },
+      {
+        "target_step": 84,
+        "sha256": "05e76e750a9c4c2a2f3e32af22c40a5c9b7ea4a6bc3b03f476224b81f8fc793b"
+      },
+      {
+        "target_step": 86,
+        "sha256": "7a9bf002cb3568677fc05fd7c292c0de485c0accb14ac62f0b58c0dd25b4faac"
+      },
+      {
+        "target_step": 88,
+        "sha256": "bcd3c109eedf59635f5b0de3667b9292c78bc97214d065f1e33c45b2261f1ae0"
+      },
+      {
+        "target_step": 90,
+        "sha256": "6147e69ffd3e1a0ca9be2882e0e869fceddf3725e42639cfdbf6668859110014"
+      },
+      {
+        "target_step": 92,
+        "sha256": "ed3ae9c9bc21b524be36823523157bd98e4c204b7f2fcb4c477bf5de1d5b665e"
+      },
+      {
+        "target_step": 94,
+        "sha256": "968fdbffaa879788eeaff6ba17cc0e7c5f8a606bab30a2bcd5ac35365243ee27"
+      },
+      {
+        "target_step": 96,
+        "sha256": "e3745f64a9b133003fc8b96ecd8f8ea19c902cb6e95d255177317bf24715d86f"
+      },
+      {
+        "target_step": 98,
+        "sha256": "85a6a578db855f940ec87f251d5e9c3ec81213b9bef0dec3ef62f7d24820ac32"
+      },
+      {
+        "target_step": 100,
+        "sha256": "5b50f17ea86ce5e2ff60bdbb7e3c95c4bf8bb03dc0135423275fccfdfa98c7c5"
+      },
+      {
+        "target_step": 102,
+        "sha256": "11cf61acbe9208b8732b0f264777009a2dc50f9cb9e4346eea7210ba18b1f165"
+      },
+      {
+        "target_step": 104,
+        "sha256": "5e2c51f78dded125491b978e845232e0d1adc3a2ce3e48b6d6e3d301d17b31ae"
+      },
+      {
+        "target_step": 106,
+        "sha256": "b2a24cbc77d52250b98198f2833bc6f648f207067261f2ba21939469debb2090"
+      },
+      {
+        "target_step": 108,
+        "sha256": "4068dced3afbcba2bc9b68f35a758bbcb941cdea2f8212872e528fdf3e93c9a6"
+      },
+      {
+        "target_step": 110,
+        "sha256": "609c029dbfd874aa2c562151875e2169834b1f613d5946da04103356b4ba8564"
+      },
+      {
+        "target_step": 112,
+        "sha256": "38bea668a471c5b2ac335f31f8de641857296896c5ffea9681eb85e772e64053"
+      },
+      {
+        "target_step": 114,
+        "sha256": "7b9ba430838bb6b76d51b4ef015736fcefa44c8e67f5ffd537152606c4f1aeec"
+      },
+      {
+        "target_step": 116,
+        "sha256": "2863223155be60f211a557024c362556d6381d19597d78f3745c0290d362c563"
+      },
+      {
+        "target_step": 118,
+        "sha256": "83093559dcfaadcea001b70a0ba2f45dd98dc1e3505c11f1d9528bf242f6f42e"
+      },
+      {
+        "target_step": 120,
+        "sha256": "42534f7dd5e3e0bce60baca1501b7bb00f91b47fa2a322743b355fd3056b6bdc"
+      },
+      {
+        "target_step": 122,
+        "sha256": "c48947b9f412553fad4ded2417604b4027926af462f2345de6fc992d936b103b"
+      },
+      {
+        "target_step": 124,
+        "sha256": "1b38d387819879426e8ccba5d4c4f6c3ace19ebd1b965c056467308e0fd34855"
+      },
+      {
+        "target_step": 126,
+        "sha256": "ee5768d2a34fb0004d9407e4c0c3b702de5bfb3e854f9ac9e45e51414406dba0"
+      },
+      {
+        "target_step": 128,
+        "sha256": "fa9222ac649767e86a5075bbc4ec30daa9e1d0257d225e4b7324275f2a2dfcb9"
+      },
+      {
+        "target_step": 130,
+        "sha256": "3312ecd7a4a7d315898b4346fbaeec855ac3caa539a3b1d2ca7406570e7f5095"
+      },
+      {
+        "target_step": 132,
+        "sha256": "4127b23330064e5eed5f6bb7f5fedb5675a5015508c0e3cf0e5d32b48e0d1cba"
+      }
+    ],
+    "src": "libero_object_task00_trial00.webm",
+    "poster": "libero_object_task00_trial00.jpg",
+    "source_sha256": "fed4f58e8e03346bab32955b3e3a5d81a6199990fbe96274bebd0f34f797f3d3",
+    "depth_range": [
+      0.472527462542057,
+      1.9030169248580933
+    ],
+    "display_forecast_lead_steps": 8,
+    "prediction_refresh_steps": 8,
+    "prediction_panels_hold_together": true,
+    "display_chunk_reference_steps": [
+      0,
+      0,
+      0,
+      0,
+      8,
+      8,
+      8,
+      8,
+      16,
+      16,
+      16,
+      16,
+      24,
+      24,
+      24,
+      24,
+      32,
+      32,
+      32,
+      32,
+      40,
+      40,
+      40,
+      40,
+      48,
+      48,
+      48,
+      48,
+      56,
+      56,
+      56,
+      56,
+      64,
+      64,
+      64,
+      64,
+      72,
+      72,
+      72,
+      72,
+      80,
+      80,
+      80,
+      80,
+      88,
+      88,
+      88,
+      88,
+      96,
+      96,
+      96,
+      96,
+      104,
+      104,
+      104,
+      104,
+      112,
+      112,
+      112,
+      112,
+      120,
+      120,
+      120,
+      120,
+      128,
+      128,
+      128
+    ],
+    "display_left_steps": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20,
+      22,
+      24,
+      26,
+      28,
+      30,
+      32,
+      34,
+      36,
+      38,
+      40,
+      42,
+      44,
+      46,
+      48,
+      50,
+      52,
+      54,
+      56,
+      58,
+      60,
+      62,
+      64,
+      66,
+      68,
+      70,
+      72,
+      74,
+      76,
+      78,
+      80,
+      82,
+      84,
+      86,
+      88,
+      90,
+      92,
+      94,
+      96,
+      98,
+      100,
+      102,
+      104,
+      106,
+      108,
+      110,
+      112,
+      114,
+      116,
+      118,
+      120,
+      122,
+      124,
+      126,
+      128,
+      130,
+      132
+    ],
+    "display_future_steps": [
+      8,
+      8,
+      8,
+      8,
+      16,
+      16,
+      16,
+      16,
+      24,
+      24,
+      24,
+      24,
+      32,
+      32,
+      32,
+      32,
+      40,
+      40,
+      40,
+      40,
+      48,
+      48,
+      48,
+      48,
+      56,
+      56,
+      56,
+      56,
+      64,
+      64,
+      64,
+      64,
+      72,
+      72,
+      72,
+      72,
+      80,
+      80,
+      80,
+      80,
+      88,
+      88,
+      88,
+      88,
+      96,
+      96,
+      96,
+      96,
+      104,
+      104,
+      104,
+      104,
+      112,
+      112,
+      112,
+      112,
+      120,
+      120,
+      120,
+      120,
+      128,
+      128,
+      128,
+      128,
+      132,
+      132,
+      132
+    ],
+    "motion_representation": "Sparse displacement vector field; arrows from observed query pixel to predicted future endpoint",
+    "motion_rgb_background": "Observed query/reference RGB, refreshed every H8",
+    "display_motion_reference_steps": [
+      0,
+      0,
+      0,
+      0,
+      8,
+      8,
+      8,
+      8,
+      16,
+      16,
+      16,
+      16,
+      24,
+      24,
+      24,
+      24,
+      32,
+      32,
+      32,
+      32,
+      40,
+      40,
+      40,
+      40,
+      48,
+      48,
+      48,
+      48,
+      56,
+      56,
+      56,
+      56,
+      64,
+      64,
+      64,
+      64,
+      72,
+      72,
+      72,
+      72,
+      80,
+      80,
+      80,
+      80,
+      88,
+      88,
+      88,
+      88,
+      96,
+      96,
+      96,
+      96,
+      104,
+      104,
+      104,
+      104,
+      112,
+      112,
+      112,
+      112,
+      120,
+      120,
+      120,
+      120,
+      120,
+      120,
+      120
+    ],
+    "arrow_scale": 1,
+    "temporal_trails": false,
+    "default_playback_rate": 0.75,
+    "terminal_prediction_hold": true,
+    "duration": 7.6
+  },
+  {
+    "id": "libero_10_task09_trial00",
+    "suite": "libero_10",
+    "title": "put the yellow and white mug in the microwave and close it",
+    "bundle": "libero_10_task09_trial00.npz",
+    "success": true,
+    "complete_episode": true,
+    "start_step": 0,
+    "terminal_step": 249,
+    "checkpoint_sha256": "f0ef5b90f05f80b0a835cd92b2aafcb87a52664bece342ad2bbaf378ce8851b9",
+    "forecast_horizon_steps": 8,
+    "display_stride": 2,
+    "precision": "bfloat16 trunk / fp32 geometry heads",
+    "protocol": "Full-task geo cache: all predicted endpoints and observed H8 refresh references pass through the suffix together once. Heads decode separate H8 groups using refreshed reference/query features from that shared cache.",
+    "raw_episode_sha256": "7bf27e8e8262fbef2fe58990d50ed5012d38f213450d36c3341da37ec41dc147",
+    "projection": "Fixed external query camera, using decoded anchor depth and query-relative 3D displacement; no future-camera motion.",
+    "selection": {
+      "0": [
+        40,
+        129,
+        151,
+        15,
+        98,
+        72,
+        94,
+        155
+      ],
+      "1": [
+        12,
+        129,
+        150,
+        43,
+        125,
+        95,
+        155,
+        69
+      ],
+      "2": [
+        43,
+        150,
+        183,
+        68,
+        129,
+        13,
+        125,
+        180
+      ],
+      "3": [
+        16,
+        207,
+        10,
+        213,
+        97,
+        100,
+        13,
+        182
+      ],
+      "4": [
+        18,
+        235,
+        11,
+        214,
+        126,
+        15,
+        101,
+        210
+      ],
+      "5": [
+        77,
+        264,
+        12,
+        156,
+        17,
+        159,
+        70,
+        241
+      ],
+      "6": [
+        47,
+        322,
+        216,
+        126,
+        15,
+        106,
+        240,
+        130
+      ],
+      "7": [
+        134,
+        351,
+        15,
+        155,
+        271,
+        74,
+        159,
+        268
+      ],
+      "8": [
+        191,
+        408,
+        16,
+        184,
+        300,
+        132,
+        296,
+        101
+      ],
+      "9": [
+        160,
+        437,
+        16,
+        302,
+        128,
+        297,
+        191,
+        74
+      ],
+      "10": [
+        219,
+        16,
+        465,
+        212,
+        357,
+        102,
+        271,
+        188
+      ],
+      "11": [
+        243,
+        17,
+        466,
+        304,
+        130,
+        356,
+        352,
+        246
+      ],
+      "12": [
+        242,
+        17,
+        331,
+        410,
+        128,
+        246,
+        327,
+        185
+      ],
+      "13": [
+        241,
+        493,
+        44,
+        331,
+        354,
+        245,
+        129,
+        460
+      ],
+      "14": [
+        268,
+        516,
+        303,
+        71,
+        438,
+        327,
+        405,
+        157
+      ],
+      "15": [
+        210,
+        515,
+        301,
+        379,
+        43,
+        214,
+        491,
+        401
+      ],
+      "16": [
+        153,
+        460,
+        271,
+        12,
+        322,
+        212,
+        371,
+        236
+      ],
+      "17": [
+        123,
+        458,
+        295,
+        318,
+        10,
+        183,
+        204,
+        396
+      ],
+      "18": [
+        175,
+        428,
+        238,
+        9,
+        289,
+        179,
+        92,
+        292
+      ],
+      "19": [
+        148,
+        426,
+        290,
+        7,
+        200,
+        208,
+        89,
+        314
+      ],
+      "20": [
+        170,
+        423,
+        5,
+        205,
+        284,
+        87,
+        146,
+        230
+      ],
+      "21": [
+        424,
+        4,
+        205,
+        198,
+        315,
+        145,
+        284,
+        114
+      ],
+      "22": [
+        88,
+        424,
+        233,
+        198,
+        174,
+        285,
+        141,
+        33
+      ],
+      "23": [
+        89,
+        426,
+        207,
+        258,
+        148,
+        172,
+        341,
+        289
+      ],
+      "24": [
+        154,
+        401,
+        63,
+        233,
+        237,
+        122,
+        318,
+        96
+      ],
+      "25": [
+        98,
+        316,
+        63,
+        208,
+        123,
+        154,
+        204,
+        262
+      ],
+      "26": [
+        69,
+        260,
+        121,
+        7,
+        179,
+        38,
+        95,
+        205
+      ],
+      "27": [
+        40,
+        204,
+        10
+      ],
+      "28": [
+        122,
+        12,
+        37,
+        204,
+        67,
+        148,
+        92
+      ],
+      "29": [
+        10,
+        204,
+        123,
+        13,
+        93,
+        68,
+        149,
+        8
+      ],
+      "30": [
+        10,
+        405,
+        232,
+        152,
+        292,
+        69,
+        373,
+        94
+      ],
+      "31": [
+        96,
+        487,
+        289,
+        398,
+        62,
+        177,
+        375,
+        38
+      ]
+    },
+    "decode_context_frames": 158,
+    "global_attention_frames": 158,
+    "query_refresh_steps": 8,
+    "query_resets": 31,
+    "reference_controller_steps": [
+      -8,
+      0,
+      8,
+      16,
+      24,
+      32,
+      40,
+      48,
+      56,
+      64,
+      72,
+      80,
+      88,
+      96,
+      104,
+      112,
+      120,
+      128,
+      136,
+      144,
+      152,
+      160,
+      168,
+      176,
+      184,
+      192,
+      200,
+      208,
+      216,
+      224,
+      232,
+      240
+    ],
+    "query_horizon_range_steps": [
+      8,
+      14
+    ],
+    "shared_geo_cache_sha256": "8805b5d54d9b8110ef7c0ef3b64cfa32233271aceb4adea7b98e1b75bdfb11eb",
+    "geo_cache_sequence_order": [
+      {
+        "controller_step": -8,
+        "kind": "observed_reference",
+        "key": 0
+      },
+      {
+        "controller_step": 0,
+        "kind": "observed_reference",
+        "key": 1
+      },
+      {
+        "controller_step": 0,
+        "kind": "predicted_endpoint",
+        "key": 0
+      },
+      {
+        "controller_step": 2,
+        "kind": "predicted_endpoint",
+        "key": 2
+      },
+      {
+        "controller_step": 4,
+        "kind": "predicted_endpoint",
+        "key": 4
+      },
+      {
+        "controller_step": 6,
+        "kind": "predicted_endpoint",
+        "key": 6
+      },
+      {
+        "controller_step": 8,
+        "kind": "observed_reference",
+        "key": 2
+      },
+      {
+        "controller_step": 8,
+        "kind": "predicted_endpoint",
+        "key": 8
+      },
+      {
+        "controller_step": 10,
+        "kind": "predicted_endpoint",
+        "key": 10
+      },
+      {
+        "controller_step": 12,
+        "kind": "predicted_endpoint",
+        "key": 12
+      },
+      {
+        "controller_step": 14,
+        "kind": "predicted_endpoint",
+        "key": 14
+      },
+      {
+        "controller_step": 16,
+        "kind": "observed_reference",
+        "key": 3
+      },
+      {
+        "controller_step": 16,
+        "kind": "predicted_endpoint",
+        "key": 16
+      },
+      {
+        "controller_step": 18,
+        "kind": "predicted_endpoint",
+        "key": 18
+      },
+      {
+        "controller_step": 20,
+        "kind": "predicted_endpoint",
+        "key": 20
+      },
+      {
+        "controller_step": 22,
+        "kind": "predicted_endpoint",
+        "key": 22
+      },
+      {
+        "controller_step": 24,
+        "kind": "observed_reference",
+        "key": 4
+      },
+      {
+        "controller_step": 24,
+        "kind": "predicted_endpoint",
+        "key": 24
+      },
+      {
+        "controller_step": 26,
+        "kind": "predicted_endpoint",
+        "key": 26
+      },
+      {
+        "controller_step": 28,
+        "kind": "predicted_endpoint",
+        "key": 28
+      },
+      {
+        "controller_step": 30,
+        "kind": "predicted_endpoint",
+        "key": 30
+      },
+      {
+        "controller_step": 32,
+        "kind": "observed_reference",
+        "key": 5
+      },
+      {
+        "controller_step": 32,
+        "kind": "predicted_endpoint",
+        "key": 32
+      },
+      {
+        "controller_step": 34,
+        "kind": "predicted_endpoint",
+        "key": 34
+      },
+      {
+        "controller_step": 36,
+        "kind": "predicted_endpoint",
+        "key": 36
+      },
+      {
+        "controller_step": 38,
+        "kind": "predicted_endpoint",
+        "key": 38
+      },
+      {
+        "controller_step": 40,
+        "kind": "observed_reference",
+        "key": 6
+      },
+      {
+        "controller_step": 40,
+        "kind": "predicted_endpoint",
+        "key": 40
+      },
+      {
+        "controller_step": 42,
+        "kind": "predicted_endpoint",
+        "key": 42
+      },
+      {
+        "controller_step": 44,
+        "kind": "predicted_endpoint",
+        "key": 44
+      },
+      {
+        "controller_step": 46,
+        "kind": "predicted_endpoint",
+        "key": 46
+      },
+      {
+        "controller_step": 48,
+        "kind": "observed_reference",
+        "key": 7
+      },
+      {
+        "controller_step": 48,
+        "kind": "predicted_endpoint",
+        "key": 48
+      },
+      {
+        "controller_step": 50,
+        "kind": "predicted_endpoint",
+        "key": 50
+      },
+      {
+        "controller_step": 52,
+        "kind": "predicted_endpoint",
+        "key": 52
+      },
+      {
+        "controller_step": 54,
+        "kind": "predicted_endpoint",
+        "key": 54
+      },
+      {
+        "controller_step": 56,
+        "kind": "observed_reference",
+        "key": 8
+      },
+      {
+        "controller_step": 56,
+        "kind": "predicted_endpoint",
+        "key": 56
+      },
+      {
+        "controller_step": 58,
+        "kind": "predicted_endpoint",
+        "key": 58
+      },
+      {
+        "controller_step": 60,
+        "kind": "predicted_endpoint",
+        "key": 60
+      },
+      {
+        "controller_step": 62,
+        "kind": "predicted_endpoint",
+        "key": 62
+      },
+      {
+        "controller_step": 64,
+        "kind": "observed_reference",
+        "key": 9
+      },
+      {
+        "controller_step": 64,
+        "kind": "predicted_endpoint",
+        "key": 64
+      },
+      {
+        "controller_step": 66,
+        "kind": "predicted_endpoint",
+        "key": 66
+      },
+      {
+        "controller_step": 68,
+        "kind": "predicted_endpoint",
+        "key": 68
+      },
+      {
+        "controller_step": 70,
+        "kind": "predicted_endpoint",
+        "key": 70
+      },
+      {
+        "controller_step": 72,
+        "kind": "observed_reference",
+        "key": 10
+      },
+      {
+        "controller_step": 72,
+        "kind": "predicted_endpoint",
+        "key": 72
+      },
+      {
+        "controller_step": 74,
+        "kind": "predicted_endpoint",
+        "key": 74
+      },
+      {
+        "controller_step": 76,
+        "kind": "predicted_endpoint",
+        "key": 76
+      },
+      {
+        "controller_step": 78,
+        "kind": "predicted_endpoint",
+        "key": 78
+      },
+      {
+        "controller_step": 80,
+        "kind": "observed_reference",
+        "key": 11
+      },
+      {
+        "controller_step": 80,
+        "kind": "predicted_endpoint",
+        "key": 80
+      },
+      {
+        "controller_step": 82,
+        "kind": "predicted_endpoint",
+        "key": 82
+      },
+      {
+        "controller_step": 84,
+        "kind": "predicted_endpoint",
+        "key": 84
+      },
+      {
+        "controller_step": 86,
+        "kind": "predicted_endpoint",
+        "key": 86
+      },
+      {
+        "controller_step": 88,
+        "kind": "observed_reference",
+        "key": 12
+      },
+      {
+        "controller_step": 88,
+        "kind": "predicted_endpoint",
+        "key": 88
+      },
+      {
+        "controller_step": 90,
+        "kind": "predicted_endpoint",
+        "key": 90
+      },
+      {
+        "controller_step": 92,
+        "kind": "predicted_endpoint",
+        "key": 92
+      },
+      {
+        "controller_step": 94,
+        "kind": "predicted_endpoint",
+        "key": 94
+      },
+      {
+        "controller_step": 96,
+        "kind": "observed_reference",
+        "key": 13
+      },
+      {
+        "controller_step": 96,
+        "kind": "predicted_endpoint",
+        "key": 96
+      },
+      {
+        "controller_step": 98,
+        "kind": "predicted_endpoint",
+        "key": 98
+      },
+      {
+        "controller_step": 100,
+        "kind": "predicted_endpoint",
+        "key": 100
+      },
+      {
+        "controller_step": 102,
+        "kind": "predicted_endpoint",
+        "key": 102
+      },
+      {
+        "controller_step": 104,
+        "kind": "observed_reference",
+        "key": 14
+      },
+      {
+        "controller_step": 104,
+        "kind": "predicted_endpoint",
+        "key": 104
+      },
+      {
+        "controller_step": 106,
+        "kind": "predicted_endpoint",
+        "key": 106
+      },
+      {
+        "controller_step": 108,
+        "kind": "predicted_endpoint",
+        "key": 108
+      },
+      {
+        "controller_step": 110,
+        "kind": "predicted_endpoint",
+        "key": 110
+      },
+      {
+        "controller_step": 112,
+        "kind": "observed_reference",
+        "key": 15
+      },
+      {
+        "controller_step": 112,
+        "kind": "predicted_endpoint",
+        "key": 112
+      },
+      {
+        "controller_step": 114,
+        "kind": "predicted_endpoint",
+        "key": 114
+      },
+      {
+        "controller_step": 116,
+        "kind": "predicted_endpoint",
+        "key": 116
+      },
+      {
+        "controller_step": 118,
+        "kind": "predicted_endpoint",
+        "key": 118
+      },
+      {
+        "controller_step": 120,
+        "kind": "observed_reference",
+        "key": 16
+      },
+      {
+        "controller_step": 120,
+        "kind": "predicted_endpoint",
+        "key": 120
+      },
+      {
+        "controller_step": 122,
+        "kind": "predicted_endpoint",
+        "key": 122
+      },
+      {
+        "controller_step": 124,
+        "kind": "predicted_endpoint",
+        "key": 124
+      },
+      {
+        "controller_step": 126,
+        "kind": "predicted_endpoint",
+        "key": 126
+      },
+      {
+        "controller_step": 128,
+        "kind": "observed_reference",
+        "key": 17
+      },
+      {
+        "controller_step": 128,
+        "kind": "predicted_endpoint",
+        "key": 128
+      },
+      {
+        "controller_step": 130,
+        "kind": "predicted_endpoint",
+        "key": 130
+      },
+      {
+        "controller_step": 132,
+        "kind": "predicted_endpoint",
+        "key": 132
+      },
+      {
+        "controller_step": 134,
+        "kind": "predicted_endpoint",
+        "key": 134
+      },
+      {
+        "controller_step": 136,
+        "kind": "observed_reference",
+        "key": 18
+      },
+      {
+        "controller_step": 136,
+        "kind": "predicted_endpoint",
+        "key": 136
+      },
+      {
+        "controller_step": 138,
+        "kind": "predicted_endpoint",
+        "key": 138
+      },
+      {
+        "controller_step": 140,
+        "kind": "predicted_endpoint",
+        "key": 140
+      },
+      {
+        "controller_step": 142,
+        "kind": "predicted_endpoint",
+        "key": 142
+      },
+      {
+        "controller_step": 144,
+        "kind": "observed_reference",
+        "key": 19
+      },
+      {
+        "controller_step": 144,
+        "kind": "predicted_endpoint",
+        "key": 144
+      },
+      {
+        "controller_step": 146,
+        "kind": "predicted_endpoint",
+        "key": 146
+      },
+      {
+        "controller_step": 148,
+        "kind": "predicted_endpoint",
+        "key": 148
+      },
+      {
+        "controller_step": 150,
+        "kind": "predicted_endpoint",
+        "key": 150
+      },
+      {
+        "controller_step": 152,
+        "kind": "observed_reference",
+        "key": 20
+      },
+      {
+        "controller_step": 152,
+        "kind": "predicted_endpoint",
+        "key": 152
+      },
+      {
+        "controller_step": 154,
+        "kind": "predicted_endpoint",
+        "key": 154
+      },
+      {
+        "controller_step": 156,
+        "kind": "predicted_endpoint",
+        "key": 156
+      },
+      {
+        "controller_step": 158,
+        "kind": "predicted_endpoint",
+        "key": 158
+      },
+      {
+        "controller_step": 160,
+        "kind": "observed_reference",
+        "key": 21
+      },
+      {
+        "controller_step": 160,
+        "kind": "predicted_endpoint",
+        "key": 160
+      },
+      {
+        "controller_step": 162,
+        "kind": "predicted_endpoint",
+        "key": 162
+      },
+      {
+        "controller_step": 164,
+        "kind": "predicted_endpoint",
+        "key": 164
+      },
+      {
+        "controller_step": 166,
+        "kind": "predicted_endpoint",
+        "key": 166
+      },
+      {
+        "controller_step": 168,
+        "kind": "observed_reference",
+        "key": 22
+      },
+      {
+        "controller_step": 168,
+        "kind": "predicted_endpoint",
+        "key": 168
+      },
+      {
+        "controller_step": 170,
+        "kind": "predicted_endpoint",
+        "key": 170
+      },
+      {
+        "controller_step": 172,
+        "kind": "predicted_endpoint",
+        "key": 172
+      },
+      {
+        "controller_step": 174,
+        "kind": "predicted_endpoint",
+        "key": 174
+      },
+      {
+        "controller_step": 176,
+        "kind": "observed_reference",
+        "key": 23
+      },
+      {
+        "controller_step": 176,
+        "kind": "predicted_endpoint",
+        "key": 176
+      },
+      {
+        "controller_step": 178,
+        "kind": "predicted_endpoint",
+        "key": 178
+      },
+      {
+        "controller_step": 180,
+        "kind": "predicted_endpoint",
+        "key": 180
+      },
+      {
+        "controller_step": 182,
+        "kind": "predicted_endpoint",
+        "key": 182
+      },
+      {
+        "controller_step": 184,
+        "kind": "observed_reference",
+        "key": 24
+      },
+      {
+        "controller_step": 184,
+        "kind": "predicted_endpoint",
+        "key": 184
+      },
+      {
+        "controller_step": 186,
+        "kind": "predicted_endpoint",
+        "key": 186
+      },
+      {
+        "controller_step": 188,
+        "kind": "predicted_endpoint",
+        "key": 188
+      },
+      {
+        "controller_step": 190,
+        "kind": "predicted_endpoint",
+        "key": 190
+      },
+      {
+        "controller_step": 192,
+        "kind": "observed_reference",
+        "key": 25
+      },
+      {
+        "controller_step": 192,
+        "kind": "predicted_endpoint",
+        "key": 192
+      },
+      {
+        "controller_step": 194,
+        "kind": "predicted_endpoint",
+        "key": 194
+      },
+      {
+        "controller_step": 196,
+        "kind": "predicted_endpoint",
+        "key": 196
+      },
+      {
+        "controller_step": 198,
+        "kind": "predicted_endpoint",
+        "key": 198
+      },
+      {
+        "controller_step": 200,
+        "kind": "observed_reference",
+        "key": 26
+      },
+      {
+        "controller_step": 200,
+        "kind": "predicted_endpoint",
+        "key": 200
+      },
+      {
+        "controller_step": 202,
+        "kind": "predicted_endpoint",
+        "key": 202
+      },
+      {
+        "controller_step": 204,
+        "kind": "predicted_endpoint",
+        "key": 204
+      },
+      {
+        "controller_step": 206,
+        "kind": "predicted_endpoint",
+        "key": 206
+      },
+      {
+        "controller_step": 208,
+        "kind": "observed_reference",
+        "key": 27
+      },
+      {
+        "controller_step": 208,
+        "kind": "predicted_endpoint",
+        "key": 208
+      },
+      {
+        "controller_step": 210,
+        "kind": "predicted_endpoint",
+        "key": 210
+      },
+      {
+        "controller_step": 212,
+        "kind": "predicted_endpoint",
+        "key": 212
+      },
+      {
+        "controller_step": 214,
+        "kind": "predicted_endpoint",
+        "key": 214
+      },
+      {
+        "controller_step": 216,
+        "kind": "observed_reference",
+        "key": 28
+      },
+      {
+        "controller_step": 216,
+        "kind": "predicted_endpoint",
+        "key": 216
+      },
+      {
+        "controller_step": 218,
+        "kind": "predicted_endpoint",
+        "key": 218
+      },
+      {
+        "controller_step": 220,
+        "kind": "predicted_endpoint",
+        "key": 220
+      },
+      {
+        "controller_step": 222,
+        "kind": "predicted_endpoint",
+        "key": 222
+      },
+      {
+        "controller_step": 224,
+        "kind": "observed_reference",
+        "key": 29
+      },
+      {
+        "controller_step": 224,
+        "kind": "predicted_endpoint",
+        "key": 224
+      },
+      {
+        "controller_step": 226,
+        "kind": "predicted_endpoint",
+        "key": 226
+      },
+      {
+        "controller_step": 228,
+        "kind": "predicted_endpoint",
+        "key": 228
+      },
+      {
+        "controller_step": 230,
+        "kind": "predicted_endpoint",
+        "key": 230
+      },
+      {
+        "controller_step": 232,
+        "kind": "observed_reference",
+        "key": 30
+      },
+      {
+        "controller_step": 232,
+        "kind": "predicted_endpoint",
+        "key": 232
+      },
+      {
+        "controller_step": 234,
+        "kind": "predicted_endpoint",
+        "key": 234
+      },
+      {
+        "controller_step": 236,
+        "kind": "predicted_endpoint",
+        "key": 236
+      },
+      {
+        "controller_step": 238,
+        "kind": "predicted_endpoint",
+        "key": 238
+      },
+      {
+        "controller_step": 240,
+        "kind": "observed_reference",
+        "key": 31
+      },
+      {
+        "controller_step": 240,
+        "kind": "predicted_endpoint",
+        "key": 240
+      },
+      {
+        "controller_step": 242,
+        "kind": "predicted_endpoint",
+        "key": 242
+      },
+      {
+        "controller_step": 244,
+        "kind": "predicted_endpoint",
+        "key": 244
+      },
+      {
+        "controller_step": 246,
+        "kind": "predicted_endpoint",
+        "key": 246
+      },
+      {
+        "controller_step": 248,
+        "kind": "predicted_endpoint",
+        "key": 248
+      },
+      {
+        "controller_step": 249,
+        "kind": "predicted_endpoint",
+        "key": 249
+      }
+    ],
+    "suffix_passes": 1,
+    "latent_sources": [
+      {
+        "target_step": 0,
+        "sha256": "13ca64c54a7f94853b94750f1055470f5452935dec351b38ad3832ce78d9a5e6"
+      },
+      {
+        "target_step": 2,
+        "sha256": "5bb740f34c4cc5af616069e439fbdca7c9918077b305784dbcb5e381bf7163ed"
+      },
+      {
+        "target_step": 4,
+        "sha256": "93df7f5d63f5969dc45decfc48b14951d023b059e84cf3c6da9e36eb2b82bf51"
+      },
+      {
+        "target_step": 6,
+        "sha256": "fe45ba304d8316c1769c9421b66098dcc29846c689aa97c5d3cdbd030200bc6f"
+      },
+      {
+        "target_step": 8,
+        "sha256": "74d8d524905d7af48df9fb54aa055dffe3feec3a07867a66b658761ec5047078"
+      },
+      {
+        "target_step": 10,
+        "sha256": "86a09b0ae17793486e471b41c01fca338416f9db422a118898363440f0611f86"
+      },
+      {
+        "target_step": 12,
+        "sha256": "e809496ffb7957938127795788cf2efdba5394efe77dbbab69cfd624dc153c06"
+      },
+      {
+        "target_step": 14,
+        "sha256": "1c6eb28a00c83beb9f2813bbef49bd3f1c46d06a49dd9e223e459128e73a6c08"
+      },
+      {
+        "target_step": 16,
+        "sha256": "c6e232a52c88beb9f7063e73b03905398718471c86988c9dc486d0a02de55d9a"
+      },
+      {
+        "target_step": 18,
+        "sha256": "37c7ceecda4a46d60c18b02de3efafadf8872fd8f15867eed81b692abe7209a0"
+      },
+      {
+        "target_step": 20,
+        "sha256": "017f0fe52e09f4752f8988ae0c2fed49918528dc64f71adcc34e11c5956ee2b3"
+      },
+      {
+        "target_step": 22,
+        "sha256": "4879d7fd72f0c375ac04f0f058d0969f61822613d38b49eda0ed3f6048781638"
+      },
+      {
+        "target_step": 24,
+        "sha256": "028ded9eff81f240dfcdb6cdb9e4599b4b47dc751bb4e93fbaf34eefb0ec7259"
+      },
+      {
+        "target_step": 26,
+        "sha256": "f2e98cb672c1fc3e5732a7d7dc5f567a631fc422e6103003f18a1be7c59d9f64"
+      },
+      {
+        "target_step": 28,
+        "sha256": "fcb966d67c7c8bd13de1822ca1f3368348f225f762fe5004d71cc0baaec231a7"
+      },
+      {
+        "target_step": 30,
+        "sha256": "5cbb20f9db8b29a8aaf7d84d3f38b3496d38dbcdf70d60062774ccecbdb28443"
+      },
+      {
+        "target_step": 32,
+        "sha256": "80b4df0bfde64ab312102e6c73c4f05d2f5ce3022beff7eb6795586f15b046c6"
+      },
+      {
+        "target_step": 34,
+        "sha256": "219f80bdfc32df73608b1fc2a16d07c9a5d6b292f422102c1c85befac45dfc22"
+      },
+      {
+        "target_step": 36,
+        "sha256": "fbb2fc2b25a7ec9cc814be24b136259769fa1b74767c3dcef9c0f8c5a9c3a4a7"
+      },
+      {
+        "target_step": 38,
+        "sha256": "648e984c2a03ddf6bf787ce1fd5c7ddf38f5fa391af51bcaa7067e102f6246e4"
+      },
+      {
+        "target_step": 40,
+        "sha256": "28d1d7435de57dd25b198c3fdd737e2b07a4d539e1c78c82056fe8b16f6227a7"
+      },
+      {
+        "target_step": 42,
+        "sha256": "3f3ed3d676456da3a7002090273324cb46c1992d40001d543e4510e85846b695"
+      },
+      {
+        "target_step": 44,
+        "sha256": "2946aa4a0f2097294dea5b219427d20de46e63f1718546cffb8dce188d91c907"
+      },
+      {
+        "target_step": 46,
+        "sha256": "0842d8fa599fe467ebd0d5bfee3e8680e579c96a81235feae974403fb5676068"
+      },
+      {
+        "target_step": 48,
+        "sha256": "78476d6a3dfbe6f9c3cdac0c9b40238fd3cab9362d1d3d048c7e5ee3dcdc5a8c"
+      },
+      {
+        "target_step": 50,
+        "sha256": "c88d59c3f35878b954900305b330312d0b6c4780480af12e2b2bc67f9f7d1008"
+      },
+      {
+        "target_step": 52,
+        "sha256": "31e9966e51c8bffac55787ebd50f6b7d3aaeca4d8336260cd607e78a9cd43ef4"
+      },
+      {
+        "target_step": 54,
+        "sha256": "89b3fa87171817b58596f97af961fb002833c8471e0c8a433b50afeab0f6d974"
+      },
+      {
+        "target_step": 56,
+        "sha256": "369b831297cb5dde4939a7b7fa4ba07e11a1ffc085060a533c0828112a5a0ad6"
+      },
+      {
+        "target_step": 58,
+        "sha256": "002402d2fa63bfb3ffa9e3029628f35a852b3562753151fa454096d6f513263e"
+      },
+      {
+        "target_step": 60,
+        "sha256": "dbb29d43fd9331e33db1474ed997d0eaf237d8c85a52d610305fd0be4d59748a"
+      },
+      {
+        "target_step": 62,
+        "sha256": "bf7f54dfc202971f8e9ee2df16cd126db01d699a42de347b3fbfc065fa15e26b"
+      },
+      {
+        "target_step": 64,
+        "sha256": "47f019734304eacd014e580570d1444b64cd1a5b56b474482bfe61fb55f00753"
+      },
+      {
+        "target_step": 66,
+        "sha256": "cacc9b211158b7b5eb943c0ac24670865b564054b9e7d4689ba7a950edb1bdf4"
+      },
+      {
+        "target_step": 68,
+        "sha256": "7e3b1151a858086ea18fab1016c8a13d687eb42622a3f10faf1efd72fce04aa7"
+      },
+      {
+        "target_step": 70,
+        "sha256": "37522d0821d03f4306671da9c11e904b09b4a6a09452b409f2d1d4153875ffc9"
+      },
+      {
+        "target_step": 72,
+        "sha256": "29bba4e700f8f846ae7f507ad3e6ca99327a1bbf7450f7e66e1ee314d545d774"
+      },
+      {
+        "target_step": 74,
+        "sha256": "3c40bf7f26138ba765ba21e26d3ca77031c5cb02f08c44be38f8dda34a342aa1"
+      },
+      {
+        "target_step": 76,
+        "sha256": "9c7bc0c5c0ca6abe7efdc73d819e94fe09f2fac97eda8bb028559fa109dceea6"
+      },
+      {
+        "target_step": 78,
+        "sha256": "4837d431650651653da27cbfa16dd83c04831e26eb70fb05af6814e535f52990"
+      },
+      {
+        "target_step": 80,
+        "sha256": "88dd941e79d6217677cea3249fafd6c15dcfbe7bc1a36545f65619aebd27cae4"
+      },
+      {
+        "target_step": 82,
+        "sha256": "39f47fd275ee73d7a01349ec6bb1e476e220bf4b12f9842e97721be32f5f73f7"
+      },
+      {
+        "target_step": 84,
+        "sha256": "52d0da6c84c3bfe729a67cdfea24a2a8b2da74590916f31d9e25ddc9ec546590"
+      },
+      {
+        "target_step": 86,
+        "sha256": "931e94f2f25763d9246dee21574dec6cf4932fbac4a09912ecd085eb310fb01e"
+      },
+      {
+        "target_step": 88,
+        "sha256": "61a6047bc72232716ae5e97f8adf9199aa30a781e841cea18b99a8e57d40a599"
+      },
+      {
+        "target_step": 90,
+        "sha256": "85888741b867b7501ddafc8424936732f48293a053c2ef655453af01821c079e"
+      },
+      {
+        "target_step": 92,
+        "sha256": "fafd95e5fbca402fc4ac803618b6463a47e8fa9a78cbc4f66720c5fa7b986928"
+      },
+      {
+        "target_step": 94,
+        "sha256": "1313897640350972e4b29ab8aa271ae7041cc6e1edefdd2db1880f6d6c72d340"
+      },
+      {
+        "target_step": 96,
+        "sha256": "2d61ef164b8d91bf857a8c13417ee04ffac84bbd6c1dfdb607375f0fda9bbd5f"
+      },
+      {
+        "target_step": 98,
+        "sha256": "c606de17ac4d9e1c8f0d7544b0fc4bc41b8aacd38d8667bcd4c0d6b08b9bfb84"
+      },
+      {
+        "target_step": 100,
+        "sha256": "ac88875ded87ddb62bcab2ecd724e45f3cf608e8dd9b26d3a37a6a1c2a47f809"
+      },
+      {
+        "target_step": 102,
+        "sha256": "4b749e956aa8d6683cbaa3c4434644c39aabae91210aafbb29c0919211246903"
+      },
+      {
+        "target_step": 104,
+        "sha256": "562169ed5db33858e301d7a6c8944fbdbe3232821c3f59c7d4cb9a6b8104528a"
+      },
+      {
+        "target_step": 106,
+        "sha256": "28c074a48416843ccc96f2e9d7f68675cefdabb58ac0c08dfc8e124a9763d36e"
+      },
+      {
+        "target_step": 108,
+        "sha256": "ada0d81852ab1a368840f79b264c8f01133753c88acd878eafa10eaf7546b2b6"
+      },
+      {
+        "target_step": 110,
+        "sha256": "a6854c958f2d48b8d5d218ee8e595f00c9e4f816c6b7d97fb9a38f1b3b41b126"
+      },
+      {
+        "target_step": 112,
+        "sha256": "0e0ad9c4e2c7ae72d61fdac2a1959551bc735e6e546a2b169c4834d6e0d697e5"
+      },
+      {
+        "target_step": 114,
+        "sha256": "098b2454131869411caf7db8736c20f64dae2860de83605e3d6a84edf0809c0e"
+      },
+      {
+        "target_step": 116,
+        "sha256": "f4cb827a7fe6df2b6e4f5965487cac7173b94b0cf7304f948fa608f2fa65fcbf"
+      },
+      {
+        "target_step": 118,
+        "sha256": "61d4473c9344a4720cd2eab9a1bed3edbdfdba43044a9019d7c7a6c17ee916bd"
+      },
+      {
+        "target_step": 120,
+        "sha256": "584794fb290fd6dd426746750d64f65a53de06c1a4280987e0d78de8ba93ac9c"
+      },
+      {
+        "target_step": 122,
+        "sha256": "8d2f32e7f1b4082ea4f84ab083e1d7204ed9885528b695ecade298e77556d47f"
+      },
+      {
+        "target_step": 124,
+        "sha256": "50fa6a1a3958dc52c3c530198ccb0de08f360737cf21d0b801e6bd675e5a0451"
+      },
+      {
+        "target_step": 126,
+        "sha256": "fe3af1bc64d2dde527ec941db93613e25879e349504be9adbd9d0c5f47a91b24"
+      },
+      {
+        "target_step": 128,
+        "sha256": "c0bff33e96ab52af27c5e5e496c9cda9bb2b909848fdc438eb8f4f0c86a7c96a"
+      },
+      {
+        "target_step": 130,
+        "sha256": "765e1d74d5768b3dc126cb440cfb351c42338023ed4b50a6d83b1d1a31fefc72"
+      },
+      {
+        "target_step": 132,
+        "sha256": "b59d97007ab792876bfac9bb4c3700094a4856dc0adbc6135d3f244d69379638"
+      },
+      {
+        "target_step": 134,
+        "sha256": "29e85ec27b25e53b4340f24c9eddb0fb431b93a6f00bfe90da96d352af7377cd"
+      },
+      {
+        "target_step": 136,
+        "sha256": "3cc85eb3b3af180dbb1be12fbb35729cb5b26e6bbb8d3f09e8738dec7d5ddb03"
+      },
+      {
+        "target_step": 138,
+        "sha256": "d4fb25fed1c854d195ae5d71e4b1bb5029167094aa8ade4c1bcea52e2e7134cb"
+      },
+      {
+        "target_step": 140,
+        "sha256": "d62658beecd9cfd53e541df54dda530320a7b0d597e67960b969bf54daea8c36"
+      },
+      {
+        "target_step": 142,
+        "sha256": "be05198d2c6c57146b16fde047a22746e11d2ba7731eb7256cedcc4995024b4a"
+      },
+      {
+        "target_step": 144,
+        "sha256": "59e8b84f2523774c6a4bb5c8ea51957092630224e0ef37aa700549378604b095"
+      },
+      {
+        "target_step": 146,
+        "sha256": "c0edb11cf8f100d9abf8b7686c2144eaa105fa49cd1fcbfa829d2c9257d73414"
+      },
+      {
+        "target_step": 148,
+        "sha256": "71b7b40f2375c59b2551965c986f111cb5ae1bbbca02146ce30fd42dbd56feae"
+      },
+      {
+        "target_step": 150,
+        "sha256": "689af2be3dd0e69cbdbd98af7ca90b02b29e57d1ccb0652ecf16984a0b959aaa"
+      },
+      {
+        "target_step": 152,
+        "sha256": "d4630078d85efc764249e54a586ad4b87d8711c8960e5eb7589ed34d950c9380"
+      },
+      {
+        "target_step": 154,
+        "sha256": "e7951dfddcbed82803986d0eb8f64f4c2582b17bb8609103881780569fe90f6d"
+      },
+      {
+        "target_step": 156,
+        "sha256": "aa0784242f94ed69e69f2a1ce5e57dd14d819353a3c330a80e66a3a25d9dbae6"
+      },
+      {
+        "target_step": 158,
+        "sha256": "dca725cc4535ae7754f7c649b81fe1d74b7936f41d861c05376618348b8b36ca"
+      },
+      {
+        "target_step": 160,
+        "sha256": "2e010470e5ae76904473dd49160cab8491ab29f352eba2395b53dc1feebcfa17"
+      },
+      {
+        "target_step": 162,
+        "sha256": "88aaa5d0b09462bf0079d6f01748731855270a1a08f870335661134b1de0f652"
+      },
+      {
+        "target_step": 164,
+        "sha256": "c7ab02f3cabad5762c3941f5921243efc9528a71d445d124907d724c083691a6"
+      },
+      {
+        "target_step": 166,
+        "sha256": "8a1341294b62a2f7e3de3bd870201c6b713b60b89d11cdfc10c979168ec73b60"
+      },
+      {
+        "target_step": 168,
+        "sha256": "d31ef933d55e467ab6d3a55af45d2e8841fde9ea4a80d5fed8897bc161c9fe13"
+      },
+      {
+        "target_step": 170,
+        "sha256": "de93b5a12e5855fc1a0992fe917830f0930c024653eb597c7baff4f1d885b650"
+      },
+      {
+        "target_step": 172,
+        "sha256": "3ee4f404f576ba2ad0a7ce9d60de30c2c14eacfc878d758b25877cfa9eff8f19"
+      },
+      {
+        "target_step": 174,
+        "sha256": "4e34657464e7c5566b3bdce4bc7fe413f3092eb0ab25a49268db16312dc267d4"
+      },
+      {
+        "target_step": 176,
+        "sha256": "17ababe358a335428cc9d826631d1648bd23451fcf3d6b40d7ac85565363fd91"
+      },
+      {
+        "target_step": 178,
+        "sha256": "e1bfb23756e509bcba2615d3db321655058361517cb8260effc37c660feb139c"
+      },
+      {
+        "target_step": 180,
+        "sha256": "4e9d1bc2c553df35084e03391d6eb07c34fa25c8ffe00ed887aad5d3b0a9fb16"
+      },
+      {
+        "target_step": 182,
+        "sha256": "ddf426f0fe01ab7daa177663a7e3d92c346d899ab7b4a6ab59127521ba846aad"
+      },
+      {
+        "target_step": 184,
+        "sha256": "976565df097bb7174e77864afe53434beed70bb96770a53492c9bde8f06788ae"
+      },
+      {
+        "target_step": 186,
+        "sha256": "be96a58ac345ac2add077aaf8a44df2c07f573d4b96beeb202392e67f6fbc6cf"
+      },
+      {
+        "target_step": 188,
+        "sha256": "c8dd0a0bebf286733154db6db1119b008b2b6eafacf5fadc56480925f3330c9e"
+      },
+      {
+        "target_step": 190,
+        "sha256": "f1ee50605cb9f61674f453ec9ae20c2e103f5791dec2250666d2cb51176f038c"
+      },
+      {
+        "target_step": 192,
+        "sha256": "58f483fc1aa9c61935afe6718261d11380cabba6da8049445e1dbfa85bc7c775"
+      },
+      {
+        "target_step": 194,
+        "sha256": "5ec3770d261a47dda9e5fde4de8a71ce5371698fcfeabac94fbf6882ea2e9a11"
+      },
+      {
+        "target_step": 196,
+        "sha256": "1d253d8dfa8cf3e3af92cdd2be7bcb1776918935380bb4360fdd0735a008357d"
+      },
+      {
+        "target_step": 198,
+        "sha256": "84cbb56395649e2738ff678020a4497ad750d137363eae6baffedbf847276c15"
+      },
+      {
+        "target_step": 200,
+        "sha256": "d103cdad5cc51314884b01c59e7c17e126bcef3a87d1ad2d1e8c3e2f8d26ba9e"
+      },
+      {
+        "target_step": 202,
+        "sha256": "164d7b481206e855ad81a7c4a61c4a8caae09a5b43dcbe2ead3dc99b60346f39"
+      },
+      {
+        "target_step": 204,
+        "sha256": "8190b5c9e7b20713f26917983348e3299066943e6e2422c8daf3df5329126915"
+      },
+      {
+        "target_step": 206,
+        "sha256": "f34dd8e0b009c6246157e062bb7f576aa57265ffce1f75d0aee89911ef2c2ee0"
+      },
+      {
+        "target_step": 208,
+        "sha256": "0eba4decb8f6c4f8bec81ceb9df8db70bb127ff9e121e927ab2d650f5de2750c"
+      },
+      {
+        "target_step": 210,
+        "sha256": "2ba0d35f472294e9781be3a349ac0033c7ddd0b4f1fbe0f10b51c4c0c694bbf9"
+      },
+      {
+        "target_step": 212,
+        "sha256": "247ddd447e198ee613f1ba72d54fd2f3423f5a13b3881b69d5578cf9a9c9e78b"
+      },
+      {
+        "target_step": 214,
+        "sha256": "858bf8ab60c85146a4c1e994ce4daa7490867efd23911b8c9ace0381e3bb21ff"
+      },
+      {
+        "target_step": 216,
+        "sha256": "42000865961a76bef4f186493b321c8005f8be51dc2e7055e0d2a0c522c76c20"
+      },
+      {
+        "target_step": 218,
+        "sha256": "ea4b70fc215e15201e3523a453f4fade7f9774c67c0206e673f930a77529eb93"
+      },
+      {
+        "target_step": 220,
+        "sha256": "207a3c8d6b196cb879b54d96ae34a57d347980bfbb61f7ac2b77d4d67ed78494"
+      },
+      {
+        "target_step": 222,
+        "sha256": "f3ee1c27ab779ba858f1ec6d68c3b3531f175e9b7c2200b11cc368b8e0bc0845"
+      },
+      {
+        "target_step": 224,
+        "sha256": "d2d79958d8a80a82c23fe46911bf5c7aa89f33ff13f5b0a8d6a29feeb7a271aa"
+      },
+      {
+        "target_step": 226,
+        "sha256": "215084736223519f250b1cd5081dbbc72017be4ed9d9796977d611ffa44ea9cb"
+      },
+      {
+        "target_step": 228,
+        "sha256": "0984dab778d9a0b94103da76ca6de45b26deb80cf63f88158ad9ff4bad435795"
+      },
+      {
+        "target_step": 230,
+        "sha256": "fb00b452e7cff662d74747d93551424c83838c0feedef538afb7df1de4a5f68a"
+      },
+      {
+        "target_step": 232,
+        "sha256": "5d34acae8a2d7eb1f7bd51c26c56bc7204aebbf96897f6f8bd41e039bb1dfd56"
+      },
+      {
+        "target_step": 234,
+        "sha256": "2efbc227113217b7cac246fcaf37c72a26136a3e7976928576db4a1622dc6f93"
+      },
+      {
+        "target_step": 236,
+        "sha256": "e0e1e265d00230b024f029fc34157a2f3c34bf9b3f19390f16d86346cd4194c9"
+      },
+      {
+        "target_step": 238,
+        "sha256": "7dadfbafea6663943b4e8ebb3dec309a808cecd8af4468455bb14414217582e0"
+      },
+      {
+        "target_step": 240,
+        "sha256": "3de644440f4bb0328d6366b778738650f3ad48faae50ce503e28bd5b47826853"
+      },
+      {
+        "target_step": 242,
+        "sha256": "feb3daf8e16df57cf98dfd73383c9cd5d59b66730e688e7e0222679caeff9f1d"
+      },
+      {
+        "target_step": 244,
+        "sha256": "5273ee9016f1fb30f5778358bdb2d031220744bfea1328d157e698d52f63c381"
+      },
+      {
+        "target_step": 246,
+        "sha256": "2405d75af721f92871eaf6907401ae66718384e7ec34dc7049a9b4e0ec03e8da"
+      },
+      {
+        "target_step": 248,
+        "sha256": "96921c0f261bfbc65fae4ad64f964594543626442afbe316aea4876e22f559d9"
+      },
+      {
+        "target_step": 249,
+        "sha256": "b4f878b8f01f3a96f8958011570d124c1ecb7bb4004394efe08a6420462d928e"
+      }
+    ],
+    "src": "libero_10_task09_trial00.webm",
+    "poster": "libero_10_task09_trial00.jpg",
+    "source_sha256": "13700e280fe20e356000c56af6525bd0b5e96cf204d62a5d5c6b42f6ae579750",
+    "depth_range": [
+      0.48883678019046783,
+      1.2384841740131378
+    ],
+    "display_forecast_lead_steps": 8,
+    "prediction_refresh_steps": 8,
+    "prediction_panels_hold_together": true,
+    "display_chunk_reference_steps": [
+      0,
+      0,
+      0,
+      0,
+      8,
+      8,
+      8,
+      8,
+      16,
+      16,
+      16,
+      16,
+      24,
+      24,
+      24,
+      24,
+      32,
+      32,
+      32,
+      32,
+      40,
+      40,
+      40,
+      40,
+      48,
+      48,
+      48,
+      48,
+      56,
+      56,
+      56,
+      56,
+      64,
+      64,
+      64,
+      64,
+      72,
+      72,
+      72,
+      72,
+      80,
+      80,
+      80,
+      80,
+      88,
+      88,
+      88,
+      88,
+      96,
+      96,
+      96,
+      96,
+      104,
+      104,
+      104,
+      104,
+      112,
+      112,
+      112,
+      112,
+      120,
+      120,
+      120,
+      120,
+      128,
+      128,
+      128,
+      128,
+      136,
+      136,
+      136,
+      136,
+      144,
+      144,
+      144,
+      144,
+      152,
+      152,
+      152,
+      152,
+      160,
+      160,
+      160,
+      160,
+      168,
+      168,
+      168,
+      168,
+      176,
+      176,
+      176,
+      176,
+      184,
+      184,
+      184,
+      184,
+      192,
+      192,
+      192,
+      192,
+      200,
+      200,
+      200,
+      200,
+      208,
+      208,
+      208,
+      208,
+      216,
+      216,
+      216,
+      216,
+      224,
+      224,
+      224,
+      224,
+      232,
+      232,
+      232,
+      232,
+      240,
+      240,
+      240,
+      240,
+      248,
+      248
+    ],
+    "display_left_steps": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20,
+      22,
+      24,
+      26,
+      28,
+      30,
+      32,
+      34,
+      36,
+      38,
+      40,
+      42,
+      44,
+      46,
+      48,
+      50,
+      52,
+      54,
+      56,
+      58,
+      60,
+      62,
+      64,
+      66,
+      68,
+      70,
+      72,
+      74,
+      76,
+      78,
+      80,
+      82,
+      84,
+      86,
+      88,
+      90,
+      92,
+      94,
+      96,
+      98,
+      100,
+      102,
+      104,
+      106,
+      108,
+      110,
+      112,
+      114,
+      116,
+      118,
+      120,
+      122,
+      124,
+      126,
+      128,
+      130,
+      132,
+      134,
+      136,
+      138,
+      140,
+      142,
+      144,
+      146,
+      148,
+      150,
+      152,
+      154,
+      156,
+      158,
+      160,
+      162,
+      164,
+      166,
+      168,
+      170,
+      172,
+      174,
+      176,
+      178,
+      180,
+      182,
+      184,
+      186,
+      188,
+      190,
+      192,
+      194,
+      196,
+      198,
+      200,
+      202,
+      204,
+      206,
+      208,
+      210,
+      212,
+      214,
+      216,
+      218,
+      220,
+      222,
+      224,
+      226,
+      228,
+      230,
+      232,
+      234,
+      236,
+      238,
+      240,
+      242,
+      244,
+      246,
+      248,
+      249
+    ],
+    "display_future_steps": [
+      8,
+      8,
+      8,
+      8,
+      16,
+      16,
+      16,
+      16,
+      24,
+      24,
+      24,
+      24,
+      32,
+      32,
+      32,
+      32,
+      40,
+      40,
+      40,
+      40,
+      48,
+      48,
+      48,
+      48,
+      56,
+      56,
+      56,
+      56,
+      64,
+      64,
+      64,
+      64,
+      72,
+      72,
+      72,
+      72,
+      80,
+      80,
+      80,
+      80,
+      88,
+      88,
+      88,
+      88,
+      96,
+      96,
+      96,
+      96,
+      104,
+      104,
+      104,
+      104,
+      112,
+      112,
+      112,
+      112,
+      120,
+      120,
+      120,
+      120,
+      128,
+      128,
+      128,
+      128,
+      136,
+      136,
+      136,
+      136,
+      144,
+      144,
+      144,
+      144,
+      152,
+      152,
+      152,
+      152,
+      160,
+      160,
+      160,
+      160,
+      168,
+      168,
+      168,
+      168,
+      176,
+      176,
+      176,
+      176,
+      184,
+      184,
+      184,
+      184,
+      192,
+      192,
+      192,
+      192,
+      200,
+      200,
+      200,
+      200,
+      208,
+      208,
+      208,
+      208,
+      216,
+      216,
+      216,
+      216,
+      224,
+      224,
+      224,
+      224,
+      232,
+      232,
+      232,
+      232,
+      240,
+      240,
+      240,
+      240,
+      248,
+      248,
+      248,
+      248,
+      249,
+      249
+    ],
+    "motion_representation": "Sparse displacement vector field; arrows from observed query pixel to predicted future endpoint",
+    "motion_rgb_background": "Observed query/reference RGB, refreshed every H8",
+    "display_motion_reference_steps": [
+      0,
+      0,
+      0,
+      0,
+      8,
+      8,
+      8,
+      8,
+      16,
+      16,
+      16,
+      16,
+      24,
+      24,
+      24,
+      24,
+      32,
+      32,
+      32,
+      32,
+      40,
+      40,
+      40,
+      40,
+      48,
+      48,
+      48,
+      48,
+      56,
+      56,
+      56,
+      56,
+      64,
+      64,
+      64,
+      64,
+      72,
+      72,
+      72,
+      72,
+      80,
+      80,
+      80,
+      80,
+      88,
+      88,
+      88,
+      88,
+      96,
+      96,
+      96,
+      96,
+      104,
+      104,
+      104,
+      104,
+      112,
+      112,
+      112,
+      112,
+      120,
+      120,
+      120,
+      120,
+      128,
+      128,
+      128,
+      128,
+      136,
+      136,
+      136,
+      136,
+      144,
+      144,
+      144,
+      144,
+      152,
+      152,
+      152,
+      152,
+      160,
+      160,
+      160,
+      160,
+      168,
+      168,
+      168,
+      168,
+      176,
+      176,
+      176,
+      176,
+      184,
+      184,
+      184,
+      184,
+      192,
+      192,
+      192,
+      192,
+      200,
+      200,
+      200,
+      200,
+      208,
+      208,
+      208,
+      208,
+      216,
+      216,
+      216,
+      216,
+      224,
+      224,
+      224,
+      224,
+      232,
+      232,
+      232,
+      232,
+      240,
+      240,
+      240,
+      240,
+      240,
+      240
+    ],
+    "arrow_scale": 1,
+    "temporal_trails": false,
+    "default_playback_rate": 0.75,
+    "terminal_prediction_hold": true,
+    "duration": 13.45
+  }
+]

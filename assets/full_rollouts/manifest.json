@@ -1,0 +1,39 @@
+{
+  "episodes": [
+    {
+      "id": "long-0",
+      "suite": "LIBERO Long",
+      "title": "Put both objects in the basket",
+      "instruction": "put both the alphabet soup and the tomato sauce in the basket",
+      "src": "assets/full_rollouts/long_0.webm",
+      "poster": "assets/full_rollouts/long_0.jpg",
+      "success": true,
+      "duration": 13.2,
+      "source": "libero_10_task00_trial11_clean",
+      "note": "Complete successful S12-policy episode · external + wrist views · retained observations every 0.4 s."
+    },
+    {
+      "id": "long-9",
+      "suite": "LIBERO Long",
+      "title": "Place the mug and close the microwave",
+      "instruction": "put the yellow and white mug in the microwave and close it",
+      "src": "assets/full_rollouts/long_9.webm",
+      "poster": "assets/full_rollouts/long_9.jpg",
+      "success": true,
+      "duration": 14.3,
+      "source": "libero_10_task09_trial11_clean",
+      "note": "Complete successful S12-policy episode · external + wrist views · retained observations every 0.4 s."
+    },
+    {
+      "id": "spatial-plus",
+      "suite": "LIBERO Spatial · Plus",
+      "title": "Pick the right bowl and place it on the plate",
+      "instruction": "Pick up the black bowl and place it on the plate.",
+      "src": "assets/plus_success.webm",
+      "poster": "assets/plus_success_poster.jpg",
+      "success": true,
+      "source": "v93_plus_video_prompt_audit_ep34_nfe4/clean_metadata/libero_spatial_task1761_trial0",
+      "note": "Complete retained successful Spatial-Plus rollout · V90 ep34 · original video timing."
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="GeoWAM — geometry-centric world action modeling. Explore robot policy results, future depth, 3D motion, and successful LIBERO rollouts.">
+  <meta name="theme-color" content="#faf9f6"><title>GeoWAM: Geometry Latent Prediction World Action Model</title>
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css?v=matched-perturbations-6">
+  <script src="evidence-data.js" defer></script><script src="synchronized-data.js?v=matched-perturbations-6" defer></script><script src="perturbation-data.js" defer></script><script src="app.js?v=matched-perturbations-6" defer></script>
+  <link rel="canonical" href="https://yangtao2019yt.github.io/geowam/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="GeoWAM: Geometry Latent Prediction World Action Model">
+  <meta property="og:description" content="Action-conditioned future depth and motion prediction, LIBERO policy results, and robot manipulation rollouts.">
+  <meta property="og:url" content="https://yangtao2019yt.github.io/geowam/">
+  <meta property="og:image" content="https://yangtao2019yt.github.io/geowam/assets/synchronized/libero_spatial_task00_trial00.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav"><div class="nav-inner">
+  <a href="#" class="brand" aria-label="GeoWAM home"><img src="assets/icon.svg" alt="" width="29" height="29">Geo<span>WAM</span><span class="brand-dot">.</span></a>
+  <nav aria-label="Main navigation"><a href="#method">Method</a><a href="#results">Results</a><a href="#rollouts">Rollouts</a><a href="#geometry">Geometry</a></nav>
+  <a class="nav-end" href="#geometry">Explore the future <span>↗</span></a>
+</div></header>
+<main id="main">
+  <section class="hero container">
+    <div class="eyebrow"><span class="live-dot"></span> GEOMETRY-CENTRIC WORLD ACTION MODELING</div>
+    <h1>GeoWAM<span class="title-dot">:</span><br><span class="hero-subtitle">Geometry Latent Prediction<br><em>World Action Model</em></span></h1>
+    <p class="hero-copy">Model what moves, where it moves, and how to act.<br>Future depth and 3D motion bring a geometric view to robot world models.</p>
+    <div class="hero-actions"><button class="button primary publication-link" type="button" disabled aria-label="arXiv paper, coming soon">arXiv <small>Coming soon</small></button><button class="button secondary publication-link" type="button" disabled aria-label="GitHub code, coming soon">GitHub <small>Coming soon</small></button></div>
+    <div class="forecast-feature" id="forecast-showcase" aria-label="Complete tasks with future depth and motion vector fields">
+      <div class="teaser unified-teaser">
+        <div class="teaser-top"><span><i class="orange-dot"></i> Action through geometry</span><span class="mono">COMPLETE TASKS · FOUR SUITES</span></div>
+        <div class="unified-task-top"><div><span id="unified-suite" class="unified-suite">Spatial</span><div class="unified-task-copy"><span class="task-requirement">Task Requirement</span><h3 id="unified-title">Place the black bowl on the plate</h3></div></div><span class="unified-success">✓ Successful rollout</span></div>
+        <video id="unified-video" src="assets/synchronized/libero_spatial_task00_trial00.webm?v=matched-perturbations-6" poster="assets/synchronized/libero_spatial_task00_trial00.jpg?v=matched-perturbations-6" muted playsinline autoplay preload="auto" aria-label="Current RGB, future depth, and predicted displacement arrows on a shared timeline"></video>
+        <div class="unified-legend"><span>Current observation</span><span>Predicted depth · t + H8</span><span><i></i> Predicted motion · t + H8</span></div>
+        <div class="timeline"><button class="icon-button" id="unified-play" aria-label="Pause animation">Ⅱ</button><span class="mono" id="unified-clock">0.0 s</span><input id="unified-range" aria-label="Task progress" type="range" min="0" max="1000" value="0"><span class="mono" id="unified-duration"></span><select id="unified-speed" class="unified-speed" aria-label="Playback speed"><option value="0.5">0.5×</option><option value="0.75" selected>0.75×</option><option value="1">1×</option></select><button class="unified-auto" id="unified-auto" aria-pressed="true">Auto-cycle on</button></div>
+        <div class="unified-tasks" id="unified-tasks" role="group" aria-label="Choose a task suite"></div>
+      </div>
+    </div>
+    <div class="metrics">
+      <div><span class="metric-label">STANDARD LIBERO</span><strong>97.85<span>%</span></strong><p>1,957 / 2,000 successful episodes</p></div>
+      <div><span class="metric-label">FULL LIBERO-PLUS</span><strong>80.95<span>%</span></strong><p>8,119 / 10,030 perturbation variants</p></div>
+      <div><span class="metric-label">FUTURE GEOMETRY</span><strong class="geometry-metric"><span>Depth</span><span>+</span><span>Motion</span></strong><p>Explicit, decodable scene predictions</p></div>
+    </div>
+  </section>
+
+  <section class="idea-band"><div class="container idea-layout"><div class="eyebrow">THE IDEA</div><p>A robot’s future is more than an image.<br><strong>Predict the structure and motion that matter for action.</strong></p></div></section>
+
+  <section class="section container" id="method">
+    <div class="section-head"><div><p class="eyebrow">01 / METHOD</p><h2>A geometric world model.<br>An actionable future.</h2></div><p>GeoWAM explores future modeling in a geometric latent space. Its S12 branch forecasts scene states that can be decoded into depth and 3D displacement, alongside action modeling.</p></div>
+    <figure class="architecture"><a href="assets/architecture-mot.webp" target="_blank" aria-label="Open full-resolution MoT architecture"><img src="assets/architecture-mot.webp" alt="Original unified MoT architecture with geometry prediction and action experts, 4RC encoder and decoder, and FDM, IDM, Joint and Direct Policy attention masks." width="2400" height="995"></a><figcaption><span class="tag">UNIFIED MoT ARCHITECTURE</span> Geometry prediction and action experts share a unified modeling framework with four task attention masks. The benchmark scores use the separately evaluated action-only policy.</figcaption></figure>
+    <details class="evidence-details architecture-comparison"><summary>Why predict in a geometric latent space? <span>+</span></summary><img class="full-image" src="assets/geometry-latent-comparison.webp" alt="Original comparison of latent diffusion, JEPA, and prediction in pretrained geometric latent space" loading="lazy"></details>
+    <div class="method-points"><article><span class="point-number">01</span><h3>Represent the scene</h3><p>Multi-view observations become spatial S12 features, retaining a route back to explicit geometry.</p></article><article><span class="point-number">02</span><h3>Forecast geometric change</h3><p>Model future latent states with task, robot-state, and action conditions, instead of a future RGB synthesis target.</p></article><article><span class="point-number">03</span><h3>Read out depth & motion</h3><p>A frozen geometry decoder reveals future surfaces and dense 3D displacements in an inspectable form.</p></article></div>
+  </section>
+
+  <section class="section results-section" id="results"><div class="container">
+    <div class="section-head"><div><p class="eyebrow">02 / POLICY RESULTS</p><h2>Strong control.<br>Beyond clean scenes.</h2></div><p>One joint policy across 40 LIBERO tasks. A complete LIBERO-Plus evaluation tests behavior under changes to viewpoints, lighting, objects, sensors, and robot initialization.</p></div>
+    <div class="results-layout"><div class="chart-panel"><div class="chart-header"><h3>Success rate <span>↑</span></h3><div class="segmented" role="group" aria-label="Benchmark"><button class="active" data-benchmark="libero" aria-pressed="true">LIBERO</button><button data-benchmark="plus" aria-pressed="false">LIBERO-Plus</button></div></div><div id="benchmark-bars" class="benchmark-bars" aria-live="polite"></div><div class="chart-axis"><span>0</span><span>25</span><span>50</span><span>75</span><span>100%</span></div><p id="chart-note" class="caption"></p></div>
+    <div class="suite-panel"><div class="panel-kicker">OUR JOINT POLICY / STANDARD</div><div class="suite-score"><span>97.85</span><small>%</small></div><div class="suite-breakdown"><div>Spatial<strong>98.4%</strong></div><div>Object<strong>99.2%</strong></div><div>Goal<strong>96.6%</strong></div><div>Long<strong>97.2%</strong></div></div><p class="caption">50 sequential trials per task.<br>One checkpoint · 40 known task IDs.</p></div></div>
+    <div class="table-wrap"><table><caption class="sr-only">Selected reference baselines and GeoWAM project policy results</caption><thead><tr><th>Method</th><th>Spatial</th><th>Object</th><th>Goal</th><th>Long</th><th>LIBERO avg.</th><th>LIBERO-Plus</th></tr></thead><tbody><tr><td><a href="https://arxiv.org/html/2510.13626v3" target="_blank" rel="noopener">π₀ <sup>1</sup></a></td><td>96.8</td><td>98.8</td><td>95.8</td><td>85.2</td><td>94.2</td><td>53.6</td></tr><tr><td><a href="https://yuantianyuan01.github.io/FastWAM/" target="_blank" rel="noopener">Fast-WAM <sup>2</sup></a></td><td>98.2</td><td>100.0</td><td>97.0</td><td>95.2</td><td>97.6</td><td>51.5 <sup>3</sup></td></tr><tr><td><a href="https://github.com/FluxVLA/FluxVLA" target="_blank" rel="noopener">Cosmos3-Edge <sup>4</sup></a></td><td>95.6</td><td>95.6</td><td>91.6</td><td>94.8</td><td>94.4</td><td>— <sup>†</sup></td></tr><tr class="ours-row"><td>GeoWAM project <span>policy track</span></td><td>98.4</td><td>99.2</td><td>96.6</td><td>97.2</td><td>97.85</td><td>80.95</td></tr></tbody></table></div>
+    <div class="result-notes"><p>Selected reference results, not a matched retraining study. Our policy uses task-ID conditioning; baseline training and language interfaces differ. No claim that future prediction caused these policy scores.</p><p>† Cosmos3-Edge’s archived local Plus diagnostic was <strong>32/56 = 57.14%</strong>; it is excluded from the full-Plus chart because the evaluation set differs.</p></div>
+    <details class="evidence-details"><summary>Evaluation protocol & reference sources <span>+</span></summary><div><p><strong>Our scores.</strong> DINOv2-L + FM MoT, fixed step32k; 1,957/2,000 standard episodes and 8,119/10,030 full Plus variants. Single training seed; zero recorded evaluation errors. Task IDs replace text embeddings. Plus language variants are identity controls; excluding them gives 77.73%.</p><p><strong>References.</strong> <a href="https://arxiv.org/html/2510.13626v3" target="_blank" rel="noopener">[1] LIBERO-Plus</a> · <a href="https://yuantianyuan01.github.io/FastWAM/" target="_blank" rel="noopener">[2] Fast-WAM</a> · <a href="https://arxiv.org/html/2603.22078v5" target="_blank" rel="noopener">[3] WAM robustness study</a> · <a href="https://github.com/FluxVLA/FluxVLA" target="_blank" rel="noopener">[4] FluxVLA / Cosmos3-Edge</a>.</p><p><a href="assets/archived_benchmark.png" target="_blank">View the earlier comparison figure ↗</a> <span class="caption">(historical figure; Plus updated in the live table above)</span> · <a href="evidence.json" target="_blank">Asset & metric provenance ↗</a></p></div></details>
+    <div class="plus-summary"><div><p class="eyebrow">ROBUSTNESS AT A GLANCE</p><h3>10,030 variants.<br>Seven perturbation families.</h3><p>Full-Plus success rate: 80.95%.</p></div><div class="perturbation-bars" id="perturbation-bars"></div></div>
+  </div></section>
+
+  <section class="section container" id="rollouts">
+    <div class="section-head"><div><p class="eyebrow">03 / CLOSED-LOOP ROLLOUTS</p><h2>Clean and perturbed<br>rollouts.</h2></div><p>The same initial state, with and without a disturbance. Both recordings use one controller-time clock. Jump to the disturbance to compare the response.</p></div>
+    <div class="rollout-toolbar"><div class="segmented" role="group" aria-label="Choose a perturbation comparison"><button class="active" data-comparison="0" aria-pressed="true">Object shift · 5 cm</button><button data-comparison="1" aria-pressed="false">Action disturbance</button></div><div class="comparison-actions"><button id="comparison-event" class="text-button">Jump to disturbance ↗</button><button id="comparison-start" class="text-button">Play from start ↺</button></div></div>
+    <article class="perturbation-panel" id="perturbation-compare"><div class="perturbation-heading"><h3 id="comparison-title">Place the alphabet soup and tomato sauce in the basket</h3><span id="comparison-event-label">Disturbance at 2.8 s</span></div><video id="comparison-video" src="assets/perturbation-comparison/object-shift.webm" poster="assets/perturbation-comparison/object-shift.jpg" muted loop playsinline controls preload="metadata" aria-label="Synchronized clean and perturbed recordings of the same task"></video><div class="comparison-legend"><span>Clean</span><span id="comparison-perturbation">Perturbed · object shifted by 5 cm</span></div></article>
+    <div class="bonus-rollout" hidden><div><span class="eyebrow">LIBERO-PLUS / SUCCESSFUL ROLLOUT</span><h3>Pick the right bowl.<br>Place it on the plate.</h3><p>A retained V90 ep34 success under the Plus protocol.</p></div><video src="assets/plus_success.webm" poster="assets/plus_success_poster.jpg" muted loop playsinline controls preload="none" aria-label="Successful LIBERO Plus spatial bowl placement rollout"></video></div>
+  </section>
+
+  <section class="section geometry-section" id="geometry"><div class="container">
+    <div class="section-head"><div><p class="eyebrow">04 / FUTURE GEOMETRY</p><h2>Look inside<br>the predicted world.</h2></div><p>Geometry makes forecasts inspectable: compare future surfaces, examine dense motion, and trace point correspondences through time.</p></div>
+    <div class="geometry-tabs" role="tablist" aria-label="Geometry demonstrations"><button role="tab" id="tab-gam" class="active" aria-controls="geometry-gam" aria-selected="true" data-geometry="gam">Prediction Quality</button></div>
+    <div class="geometry-panel" id="geometry-gam" role="tabpanel" aria-labelledby="tab-gam">
+      <div class="gam-header"><div><h3>Predicting the next geometric state</h3><p>External-view depth · H8 = 0.4 s · 4 standard tasks × 4 replans</p></div><label class="task-select">Example task<select id="gam-task"><option value="0">Task 0</option><option value="5">Task 5</option><option value="7">Task 7</option><option value="8">Task 8</option></select></label></div>
+      <div class="gam-grid"><figure><img id="gam-rgb" src="assets/gam/task0/rgb_0.webp" alt="Realized future RGB for the selected GAM-controlled endpoint"><figcaption>Realized future RGB</figcaption></figure><figure><img id="gam-baseline" src="assets/gam/task0/gam_0.webp" alt="GAM future depth after diagnostic scale and bias alignment"><figcaption>GAM <small>affine aligned</small></figcaption></figure><figure class="our-prediction"><img id="gam-ours" src="assets/gam/task0/ours_0.webp" alt="S12 predicted future depth for the same GAM-controlled endpoint"><figcaption>GeoWAM / S12 <small>predicted</small></figcaption></figure></div>
+      <div class="gam-controls"><span class="mono">Replan</span><div class="cycle-buttons" role="group" aria-label="Replan cycle"><button class="active" data-cycle="0" aria-pressed="true">1</button><button data-cycle="1" aria-pressed="false">2</button><button data-cycle="2" aria-pressed="false">3</button><button data-cycle="3" aria-pressed="false">4</button></div><button id="gam-play" class="gam-play" aria-label="Pause prediction carousel">Ⅱ Pause</button><span id="gam-error" class="caption"></span></div>
+      <div class="depth-stat"><div><span class="panel-kicker">16 EXTERNAL-VIEW ENDPOINTS / MEAN DEPTH ABSREL ↓</span><p><span>GAM <strong>0.1133</strong></span><span class="stat-arrow">→</span><span class="ours">S12 <strong>0.0175</strong></span></p></div><div class="depth-stat-note">Lower future-depth error<br>in this sampled diagnostic.</div></div>
+    </div>
+    <div class="geometry-panel" id="geometry-sequence" role="tabpanel" aria-labelledby="tab-sequence" hidden>
+      <div class="gam-header"><div><h3>Future surfaces, frame by frame</h3><p>A retained 1.6-second sequence with simulator depth references.</p></div><span class="tag">KNOWN-ACTION DIAGNOSTIC</span></div>
+      <video class="wide-video" src="assets/depth_sequence.webm" poster="assets/depth_sequence_poster.jpg" muted loop playsinline controls preload="metadata" aria-label="Future depth sequence comparing S12 and FastWAM with simulator ground truth"></video>
+      <p class="caption">S12 uses known demonstration actions. The retained sequence has eight future predictions; the RGB column is shown 0.4 s earlier for presentation. This selected case has terminal AbsRel 22.9% (S12) vs. 24.8% (Fast-WAM RGB → 4RC). Across the original eight-case full-sequence comparison, S12 did not outperform Fast-WAM on aggregate.</p>
+      <details class="evidence-details"><summary>Selected joint-prediction endpoint <span>+</span></summary><img class="full-image" src="assets/fastwam_depth.png" alt="Selected joint S12 endpoint depth diagnostic with 13.8 percent lower AbsRel than FastWAM in this case" loading="lazy"></details>
+    </div>
+    <div class="geometry-panel" id="geometry-motion" role="tabpanel" aria-labelledby="tab-motion" hidden>
+      <div class="gam-header"><div><h3>From geometric states to motion</h3><p>Dense 3D displacement fields and tracked point trajectories.</p></div><span class="tag">EXPLICIT CORRESPONDENCES</span></div>
+      <div class="motion-demo"><img src="assets/forecast_tracks/input_rgb.png" alt="Current RGB reference"><img src="assets/forecast_tracks/h08_depth.webp" alt="Predicted depth at the final future time"><img src="assets/forecast_tracks/rgb_correspondences.webp" alt="Twelve representative moving points; pink predicted endpoints and green simulator reference"></div><div class="motion-labels"><span>Current RGB</span><span>Predicted future depth</span><span>RGB point correspondences</span></div>
+      <p class="caption">12 points sampled from large predicted displacements with trajectory-space diversity. Pink arrows: predicted endpoints; green arrows: simulator reference at +1.6 s. Selection uses predictions only, without reference error filtering. The retained endpoint pairs do not provide intermediate temporal paths.</p>
+      <img class="full-image trajectory-image" src="assets/trajectories.png" alt="Original four-panel 3D trajectory comparison with simulator ground truth, RGB reconstruction, FastWAM, and predicted S12 trajectories" loading="lazy">
+      <p class="caption">Top-16 moving queries; ground truth in cyan/dashed, reconstructed or predicted tracks in magenta. Retained known-action AR diagnostic in normalized scene units. This panel illustrates the decoded correspondence capability; it does not establish a trajectory-accuracy advantage over Fast-WAM.</p>
+    </div>
+  </div></section>
+
+  <section class="closing container"><span class="eyebrow">GEOWAM</span><h2>World modeling,<br><em>in the language of geometry.</em></h2><p>Depth. Motion. Correspondence. Action.</p><a class="button primary" href="#">Back to the overview <span>↑</span></a></section>
+</main>
+<footer class="container"><a class="brand" href="#">Geo<span>WAM</span><span class="brand-dot">.</span></a><p>Research project demo · October 2026</p><span>Design references: <a href="https://nerfies.github.io/" target="_blank" rel="noopener">Nerfies</a> · <a href="https://yuantianyuan01.github.io/FastWAM/" target="_blank" rel="noopener">Fast-WAM</a> · <a href="https://cvlab-kaist.github.io/Geometric-Action-Model/" target="_blank" rel="noopener">GAM</a></span></footer>
+</body></html>
